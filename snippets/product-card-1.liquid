@@ -313,7 +313,7 @@
       {% if product.metafields.custom.pickup_only.value == true %}
         <span class="m-product-card__tag-name m-product-tag m-product-tag--new m-color-{{ settings.hot_badge_color_scheme }}">Pickup Only</span>
       {% endif %}
-      {% if product.metafields.custom.condition == 'Preloved' %}
+      {% if product.metafields.custom.condition == 'Preloved' and product.available %}
         <span class="m-product-card__tag-name m-product-tag m-product-tag--new m-color-{{ settings.new_badge_color_scheme }}">Preloved</span>
       {% endif %}
     </div>
