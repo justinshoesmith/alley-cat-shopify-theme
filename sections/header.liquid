@@ -101,9 +101,9 @@
       data-transparent="{{ transparent_on_top }}"
     >
       <span class="m-menu-button m:flex m:flex-1 m:w-3/12">
-        <div class="m-hamburger-box">
-          <div class="m-hamburger-box__inner"></div>
-        </div>
+        <button type="button" class="m-hamburger-box" aria-label="Toggle menu" aria-controls="m-menu-drawer">
+          <span class="m-hamburger-box__inner" aria-hidden="true"></span>
+        </button>
       </span>
       {% comment %} Header-logo-mobile {% endcomment %}
       {% liquid

@@ -3,7 +3,7 @@
     "brand_intro": {
       "type": "alley-cat-home-intro",
       "settings": {
-        "eyebrow": "Alley Cat Trading",
+        "eyebrow": "",
         "heading": "Thoughtful gifts. Timeless finds.",
         "descriptor": "An independent online trading house.",
         "copy": "<p>Distinctive preloved and vintage pieces, thoughtfully selected for character, condition and fair value.</p>",
@@ -19,7 +19,7 @@
         "heading": "Preloved finds",
         "heading_size": "h2",
         "subheading": "Selected for character, condition and story.",
-        "description": "Every piece has been carefully chosen for the life it has lived and the life it still has to give.",
+        "description": "",
         "header_alignment": "center",
         "color_scheme": "badge-hot",
         "container": "container-fluid",

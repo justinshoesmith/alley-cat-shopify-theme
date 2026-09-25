@@ -412,6 +412,14 @@ textarea {
 .alley-about__story h2 { font-size: clamp(1.6rem, 3vw, 2rem); line-height: 1.25; }
 .alley-home-intro__eyebrow { margin-bottom: .75rem; }
 .alley-home-intro__actions { margin-top: 1.5rem; }
+.alley-home-intro__inner { padding-block: 2rem; }
+.alley-home-intro__descriptor { margin-top: 1rem; }
+.alley-home-intro__copy { margin-top: .75rem; max-width: 610px; }
+.m-header .m-hamburger-box { min-width: 44px; height: 44px; background: transparent; color: var(--act-eucalyptus); }
+.m-header .m-hamburger-box__inner { width: 22px; }
+.m-header .m-hamburger-box__inner,
+.m-header .m-hamburger-box__inner::before,
+.m-header .m-hamburger-box__inner::after { background: currentColor; }
 .alley-sourcing {
   background: var(--act-ivory);
   border-block: 1px solid var(--act-line);

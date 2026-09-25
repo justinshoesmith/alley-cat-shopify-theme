@@ -1,7 +1,7 @@
 <section class="alley-home-intro">
   <div class="alley-home-intro__inner">
-    <p class="alley-home-intro__eyebrow">{{ section.settings.eyebrow | escape }}</p>
-    <h1>{{ section.settings.heading | escape }}</h1>
+    {% if section.settings.eyebrow != blank %}<p class="alley-home-intro__eyebrow">{{ section.settings.eyebrow | escape }}</p>{% endif %}
+    <h1>{{ section.settings.heading | escape | replace: '. ', '.<br>' }}</h1>
     <p class="alley-home-intro__descriptor">{{ section.settings.descriptor | escape }}</p>
     <div class="alley-home-intro__copy rte">{{ section.settings.copy }}</div>
     <div class="alley-home-intro__actions">
