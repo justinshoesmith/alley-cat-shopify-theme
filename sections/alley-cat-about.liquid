@@ -1,0 +1,22 @@
+<section class="alley-about">
+  <div class="alley-about__inner">
+    <p class="alley-about__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+    <h1>{{ section.settings.heading | escape }}</h1>
+    <p class="alley-about__lead">{{ section.settings.lead | escape }}</p>
+    <div class="alley-about__copy rte">{{ section.settings.introduction }}</div>
+    <div class="alley-about__story rte">{{ section.settings.story }}</div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Alley Cat about",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "About Alley Cat Trading" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Thoughtful gifts. Timeless finds." },
+    { "type": "text", "id": "lead", "label": "Lead", "default": "An independent online trading house." },
+    { "type": "richtext", "id": "introduction", "label": "Introduction", "default": "<p>Alley Cat Trading is a trusted source for distinctive pre-loved and vintage finds. Every piece is chosen for its character, condition, usefulness, story and fair value.</p><p>From our home in Warwick, Queensland, we bring together objects with a life already lived and plenty left to give.</p>" },
+    { "type": "richtext", "id": "story", "label": "Story", "default": "<h2>Chosen with care</h2><p>We believe the most memorable homes and gifts are built slowly: with pieces that are useful, curious, well made or simply impossible to pass by. Our collection changes often, because a good find rarely stays on the shelf for long.</p><p>Whether you are looking for a thoughtful gift, a practical vintage object or something with a little more history, we hope you enjoy the hunt.</p>" }
+  ]
+}
+{% endschema %}

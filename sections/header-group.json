@@ -1,1 +1,234 @@
-{"type":"header","name":"Header","sections":{"annoucement":{"type":"annoucement","blocks":{"item_QFGxQg":{"type":"item","settings":{"message":"🚚 Flat Rate Shipping $9.95 | 🎁 Free Shipping Over $150","message_link":""}},"item_drqxAd":{"type":"item","settings":{"message":"✨ Gifts With Heart","message_link":""}}},"block_order":["item_QFGxQg","item_drqxAd"],"settings":{"container":"container","color_scheme":"default","show_announcement":true,"homepage_only":false,"show_close":false,"show_divider":false,"show_nav":true,"autorotate":true,"autorotate_speed":7}},"annoucement_RGzcjX":{"type":"annoucement","blocks":{"item_byBUEp":{"type":"item","settings":{"message":"Now trading online.","message_link":"shopify:\/\/collections\/sale"}}},"block_order":["item_byBUEp"],"settings":{"container":"container","color_scheme":"scheme-1f1ee3e2-5274-4499-8686-29a2751ffedd","show_announcement":true,"homepage_only":false,"show_close":false,"show_divider":false,"show_nav":false,"autorotate":false,"autorotate_speed":3}},"header":{"type":"header","blocks":{"ea9b6fb7-1851-4d8c-97b4-34ced6444026":{"type":"topbar","disabled":true,"settings":{"color_scheme":"badge-hot","show_divider":true,"transparent_on_top":false,"show_phone_numb":false,"show_email":false,"show_social_links":true,"show_stores_page":true,"show_currency_switcher":true,"show_country_selector":false,"show_language_switcher":false,"alert_message":"<p><span style=\"font-weight: 600; font-size: 1rem;\"><\/span><\/p>"}},"361a0538-7001-4bd7-95ea-0afa7de09830":{"type":"custom_html","disabled":true,"settings":{"heading":"Home","container":"container-fluid","html":""}},"e8fdc97e-a94b-4cf5-952d-e685a692eebf":{"type":"custom_html","disabled":true,"settings":{"heading":"products","container":"container-fluid","html":""}},"866250b8-6508-4567-a938-9ab6c593ef69":{"type":"custom_html","disabled":true,"settings":{"heading":"Foxkit","container":"container-fluid","html":""}},"banner_wYT7hp":{"type":"banner","settings":{"heading":"Gifts","container":"inherit","banner_style":"outside","banner_link":"","banner_title":"New collection","banner_desc":"","banner_button_text":"Shop now"}},"banner_Dg9B6f":{"type":"banner","settings":{"heading":"Home & Living","container":"inherit","banner_style":"outside","banner_link":"","banner_title":"New collection","banner_desc":"","banner_button_text":"Shop now"}},"banner_LCp3xh":{"type":"banner","disabled":true,"settings":{"heading":"Garden","container":"inherit","banner_style":"outside","banner_link":"","banner_title":"New collection","banner_desc":"","banner_button_text":"Shop now"}},"6164b6cf-ee72-4df3-85d5-18ffb7bd25b9":{"type":"banner","settings":{"heading":"Vintage & Collectibles","container":"inherit","banner_style":"outside","banner_link":"","banner_title":"New collection","banner_desc":"","banner_button_text":"Shop now"}},"banner_DwEWaC":{"type":"banner","disabled":true,"settings":{"heading":"Hardware","container":"inherit","banner_style":"outside","banner_link":"","banner_title":"New collection","banner_desc":"","banner_button_text":"Shop now"}}},"block_order":["ea9b6fb7-1851-4d8c-97b4-34ced6444026","361a0538-7001-4bd7-95ea-0afa7de09830","e8fdc97e-a94b-4cf5-952d-e685a692eebf","866250b8-6508-4567-a938-9ab6c593ef69","banner_wYT7hp","banner_Dg9B6f","banner_LCp3xh","6164b6cf-ee72-4df3-85d5-18ffb7bd25b9","banner_DwEWaC"],"custom_css":["a[href=\"\/collections\/sale\"] {color: #992e00;}",".m-menu__item > a:hover {color: rgb(var(--color-button));}",".m-sub-menu__item > a {color: rgba(var(--color-foreground), 0.9); padding-top: 0.3rem; padding-bottom: 0.3rem;}",".m-menu__item--mega .m-sub-menu__item--level-1 > .m-menu__link {font-weight: 890;}",".m-menu__item--active {color: rgb(var(--color-button));}",".m-menu__item--mega .m-mega-menu__column {margin-top: 0px;}",".m-menu__item--mega .m-mega-menu__inner {padding-top: 30px;}"],"settings":{"color_scheme":"badge-sale","color_scheme_menu":"badge-sale","header_design":"logo-left-menu-center","container":"container-fluid","sticky_header":"always","transparent_on_top":false,"transparent_text_color":"#ffffff","logo_text":"Alley Cat Trading","logo_svg":"https:\/\/cdn.shopify.com\/s\/files\/1\/0274\/1777\/2129\/files\/Alley_Cat_Trading_Horiz_Logo.svg?v=1759442994","logo_mobile_svg":"https:\/\/cdn.shopify.com\/s\/files\/1\/0274\/1777\/2129\/files\/Alley_Cat_Trading_Horiz_Logo.svg?v=1759442994","logo_transparent_svg":"","logo_max_width":180,"sticky_logo_max_width":150,"mobile_logo_max_width":160,"main_menu":"new-menu-20251221","secondary_menu":"main-menu","mobile_menu":"","uppercase_parent_level":false,"show_menu_column_divider":false,"search":"show_icon","show_account_icon":true,"show_cart_icon":true,"show_wishlist_icon":true,"show_compare_icon":false,"show_currency_switcher":false,"show_country_selector":false,"show_language_switcher":false,"mb_show_currency_switcher":false,"mb_show_country_selector":false,"mb_show_language_switcher":false}}},"order":["annoucement","annoucement_RGzcjX","header"]}
+{
+  "type": "header",
+  "name": "Header",
+  "sections": {
+    "annoucement": {
+      "type": "annoucement",
+      "blocks": {
+        "item_QFGxQg": {
+          "type": "item",
+          "settings": {
+            "message": "Flat-rate shipping Australia-wide · Free shipping over $79",
+            "message_link": ""
+          }
+        },
+        "item_drqxAd": {
+          "type": "item",
+          "settings": {
+            "message": "Thoughtful gifts. Timeless finds.",
+            "message_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_QFGxQg",
+        "item_drqxAd"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "default",
+        "show_announcement": true,
+        "homepage_only": false,
+        "show_close": false,
+        "show_divider": false,
+        "show_nav": true,
+        "autorotate": true,
+        "autorotate_speed": 7
+      }
+    },
+    "annoucement_RGzcjX": {
+      "type": "annoucement",
+      "blocks": {
+        "item_byBUEp": {
+          "type": "item",
+          "settings": {
+            "message": "An independent online trading house.",
+            "message_link": "shopify://pages/about-us"
+          }
+        }
+      },
+      "block_order": [
+        "item_byBUEp"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "scheme-1f1ee3e2-5274-4499-8686-29a2751ffedd",
+        "show_announcement": true,
+        "homepage_only": false,
+        "show_close": false,
+        "show_divider": false,
+        "show_nav": false,
+        "autorotate": false,
+        "autorotate_speed": 3
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "ea9b6fb7-1851-4d8c-97b4-34ced6444026": {
+          "type": "topbar",
+          "disabled": true,
+          "settings": {
+            "color_scheme": "badge-hot",
+            "show_divider": true,
+            "transparent_on_top": false,
+            "show_phone_numb": false,
+            "show_email": false,
+            "show_social_links": true,
+            "show_stores_page": true,
+            "show_currency_switcher": true,
+            "show_country_selector": false,
+            "show_language_switcher": false,
+            "alert_message": "<p><span style=\"font-weight: 600; font-size: 1rem;\"></span></p>"
+          }
+        },
+        "361a0538-7001-4bd7-95ea-0afa7de09830": {
+          "type": "custom_html",
+          "disabled": true,
+          "settings": {
+            "heading": "Home",
+            "container": "container-fluid",
+            "html": ""
+          }
+        },
+        "e8fdc97e-a94b-4cf5-952d-e685a692eebf": {
+          "type": "custom_html",
+          "disabled": true,
+          "settings": {
+            "heading": "products",
+            "container": "container-fluid",
+            "html": ""
+          }
+        },
+        "866250b8-6508-4567-a938-9ab6c593ef69": {
+          "type": "custom_html",
+          "disabled": true,
+          "settings": {
+            "heading": "Foxkit",
+            "container": "container-fluid",
+            "html": ""
+          }
+        },
+        "banner_wYT7hp": {
+          "type": "banner",
+          "settings": {
+            "heading": "Gifts",
+            "container": "inherit",
+            "banner_style": "outside",
+            "banner_link": "",
+            "banner_title": "New collection",
+            "banner_desc": "",
+            "banner_button_text": "Shop now"
+          }
+        },
+        "banner_Dg9B6f": {
+          "type": "banner",
+          "settings": {
+            "heading": "Home & Living",
+            "container": "inherit",
+            "banner_style": "outside",
+            "banner_link": "",
+            "banner_title": "New collection",
+            "banner_desc": "",
+            "banner_button_text": "Shop now"
+          }
+        },
+        "banner_LCp3xh": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "heading": "Garden",
+            "container": "inherit",
+            "banner_style": "outside",
+            "banner_link": "",
+            "banner_title": "New collection",
+            "banner_desc": "",
+            "banner_button_text": "Shop now"
+          }
+        },
+        "6164b6cf-ee72-4df3-85d5-18ffb7bd25b9": {
+          "type": "banner",
+          "settings": {
+            "heading": "Vintage & Collectibles",
+            "container": "inherit",
+            "banner_style": "outside",
+            "banner_link": "",
+            "banner_title": "New collection",
+            "banner_desc": "",
+            "banner_button_text": "Shop now"
+          }
+        },
+        "banner_DwEWaC": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "heading": "Hardware",
+            "container": "inherit",
+            "banner_style": "outside",
+            "banner_link": "",
+            "banner_title": "New collection",
+            "banner_desc": "",
+            "banner_button_text": "Shop now"
+          }
+        }
+      },
+      "block_order": [
+        "ea9b6fb7-1851-4d8c-97b4-34ced6444026",
+        "361a0538-7001-4bd7-95ea-0afa7de09830",
+        "e8fdc97e-a94b-4cf5-952d-e685a692eebf",
+        "866250b8-6508-4567-a938-9ab6c593ef69",
+        "banner_wYT7hp",
+        "banner_Dg9B6f",
+        "banner_LCp3xh",
+        "6164b6cf-ee72-4df3-85d5-18ffb7bd25b9",
+        "banner_DwEWaC"
+      ],
+      "custom_css": [
+        "a[href=\"/collections/sale\"] {color: #992e00;}",
+        ".m-menu__item > a:hover {color: rgb(var(--color-button));}",
+        ".m-sub-menu__item > a {color: rgba(var(--color-foreground), 0.9); padding-top: 0.3rem; padding-bottom: 0.3rem;}",
+        ".m-menu__item--mega .m-sub-menu__item--level-1 > .m-menu__link {font-weight: 890;}",
+        ".m-menu__item--active {color: rgb(var(--color-button));}",
+        ".m-menu__item--mega .m-mega-menu__column {margin-top: 0px;}",
+        ".m-menu__item--mega .m-mega-menu__inner {padding-top: 30px;}"
+      ],
+      "settings": {
+        "color_scheme": "badge-sale",
+        "color_scheme_menu": "badge-sale",
+        "header_design": "logo-left-menu-center",
+        "container": "container-fluid",
+        "sticky_header": "always",
+        "transparent_on_top": false,
+        "transparent_text_color": "#ffffff",
+        "logo_text": "Alley Cat Trading",
+        "logo_svg": "",
+        "logo_mobile_svg": "",
+        "logo_transparent_svg": "",
+        "logo_max_width": 104,
+        "sticky_logo_max_width": 86,
+        "mobile_logo_max_width": 76,
+        "main_menu": "new-menu-20251221",
+        "secondary_menu": "main-menu",
+        "mobile_menu": "",
+        "uppercase_parent_level": false,
+        "show_menu_column_divider": false,
+        "search": "show_icon",
+        "show_account_icon": true,
+        "show_cart_icon": true,
+        "show_wishlist_icon": true,
+        "show_compare_icon": false,
+        "show_currency_switcher": false,
+        "show_country_selector": false,
+        "show_language_switcher": false,
+        "mb_show_currency_switcher": false,
+        "mb_show_country_selector": false,
+        "mb_show_language_switcher": false
+      }
+    }
+  },
+  "order": [
+    "annoucement",
+    "annoucement_RGzcjX",
+    "header"
+  ]
+}

@@ -1,1 +1,266 @@
-{"sections":{"breadcrumb":{"type":"breadcrumb","custom_css":[".m-breadcrumb--item {padding-top: 8px; padding-bottom: 8px; padding-left: 12px; padding-right: 12px; font-size: 12px;}",".m-breadcrumb--item-current {color: rgb(var(--color-foreground));}"],"settings":{"container":"container","text_alignment":"left","hide_current":false,"hide_on_mb":false,"animations":"inherit"}},"main":{"type":"main-product","blocks":{"title":{"type":"title","settings":{}},"price":{"type":"price","settings":{"show_saving":true,"sale_badge_type":"fixed_amount"}},"afterpay_on_site_messaging_payments_messaging_Mn8XCh":{"type":"shopify:\/\/apps\/afterpay-on-site-messaging\/blocks\/payments-messaging\/f45a5524-d177-4475-bf59-281efd2215a8","settings":{"text_align":"inherit","margin_top":16,"margin_bottom":16,"color":"","size":"md","intro_text":"or","show_interest_free":true,"payment_amount_is_bold":true,"show_with":true,"logo_type":"compact-badge","logo_theme":"black-on-mint","modal_link_style":"circled-info-icon","modal_theme":"mint","breakpoint":749,"text_align_mobile":"inherit","margin_top_mobile":16,"margin_bottom_mobile":16,"show_lower_limit":true,"show_upper_limit":true,"show_if_outside_limits":true,"product":"{{product}}"}},"custom_liquid_c4JeGh":{"type":"custom_liquid","settings":{"custom_liquid":"<!-- Zip WIDGET -->\n{%render 'zip-widget'%}\n<span style=\"cursor:pointer\" id=\"shopify-zip-prod-widget\" data-zm-asset=\"productwidget\" data-zm-widget=\"popup\" data-zm-popup-asset=\"termsdialog\"><\/span>\n<!-- end Zip WIDGET -->"}},"foxkit_sales_boost_stock_countdown_L3grj6":{"type":"shopify:\/\/apps\/foxkit-upsell-bundles\/blocks\/stock-countdown\/13f41957-6b79-47c1-99a2-e52431f06fff","disabled":true,"settings":{"product":"{{product}}"}},"inventory_status_w8CjDz":{"type":"inventory_status","settings":{"show_indicator_bar":true,"normal_text":"","low_text":"<p>- Hurry! Limited stock left.<\/p>","outofstock_text":"","backordered_text":"<p>Backordered<\/p>"}},"variant_picker":{"type":"variant_picker","settings":{"size_title":"Size"}},"foxkit_aio_upsell_quantity_breaks_PQnQe3":{"type":"shopify:\/\/apps\/foxkit-upsell-bundles\/blocks\/quantity-breaks\/13f41957-6b79-47c1-99a2-e52431f06fff","settings":{"product":"{{product}}"}},"custom_liquid_rDn6Ya":{"type":"custom_liquid","name":"Pickup Only","settings":{"custom_liquid":"{% if product.metafields.custom.pickup_only.value == true %}\n  <div\n    role=\"note\"\n    style=\"\n      display: flex;\n      align-items: flex-start;\n      gap: 10px;\n      margin: 14px 0;\n      padding: 12px 14px;\n      background: #f6f3ee;\n      border-left: 4px solid #b07a3f;\n      border-radius: 6px;\n      font-size: 0.95em;\n      line-height: 1.4;\n    \"\n  >\n    <span style=\"font-size: 1.1em; line-height: 1;\">📍<\/span>\n    <div>\n      <strong style=\"display: block; margin-bottom: 2px;\">\n        Pickup only\n      <\/strong>\n      This item is available for in-store pickup only (Warwick) and is not eligible for shipping.\n    <\/div>\n  <\/div>\n{% endif %}"}},"buy_buttons":{"type":"buy_buttons","settings":{"show_quantity_selector":true,"show_atc_button":true,"show_dynamic_checkout":false,"show_gift_card_recipient":true}},"addons":{"type":"addons","settings":{"show_atcp":false,"show_ask_a_question":true,"show_social":true}},"shipping_AJN7zL":{"type":"shipping","settings":{"show_delivery_times":true,"deliver_text":"Estimated Delivery:","deliver_days":"7","date_format":"%b %d","show_shipping_text":true,"shipping_text":"<p><strong>Flat Rate Shipping: <\/strong>$9.95 Australia wide, <br\/>sent from Warwick, QLD.<\/p>"}},"collapsible_tab_HVk9Dp":{"type":"collapsible_tab","settings":{"heading":"Details","content":"","liquid":"{{product.description}}","default_open":true}},"collapsible_tab_aiKAVg":{"type":"collapsible_tab","settings":{"heading":"Shipping","content":"<p>$9.95 Flat rate shipping Australia wide.<\/p><p>Free shipping on orders over $99.<\/p><p>Sometimes products may arrive separately but you will only be charged one delivery fee per order.<\/p><p><a href=\"https:\/\/alley-cat-trading.gorgias.help\/en-US\/articles\/shipping-and-tracking-212290\" target=\"_blank\" title=\"Shipping and tracking\">Read more<\/a><\/p>","liquid":"","default_open":false}},"collapsible_tab_g4N3wa":{"type":"collapsible_tab","settings":{"heading":"Returns","content":"<p><a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"Refund Policy\">Read more<\/a><\/p>","liquid":"","default_open":false}},"trust_badge_JiFXUr":{"type":"trust_badge","settings":{"trust_badges_text":"<p>Guaranteed safe and secure checkout<\/p>","trust_badges_image":"shopify:\/\/shop_images\/trust-badges-gray.png","trust_badges_image_width":"350px","position":"below"}}},"block_order":["title","price","afterpay_on_site_messaging_payments_messaging_Mn8XCh","custom_liquid_c4JeGh","foxkit_sales_boost_stock_countdown_L3grj6","inventory_status_w8CjDz","variant_picker","foxkit_aio_upsell_quantity_breaks_PQnQe3","custom_liquid_rDn6Ya","buy_buttons","addons","shipping_AJN7zL","collapsible_tab_HVk9Dp","collapsible_tab_aiKAVg","collapsible_tab_g4N3wa","trust_badge_JiFXUr"],"custom_css":[".m-color-badge-sale {background-color: #b30000;}",".main-product__block + .main-product__block {margin-top: 16px;}",".m-collapsible--button {padding-top: 5px;}"],"settings":{"container":"container","layout":"layout-6","show_atwl":true,"enable_history_state":true,"enable_variant_group_images":false,"disable_selected_variant_default":false,"show_featured_media":true,"show_zoom_button":true,"enable_video_autoplay":false,"show_nav_media_mobile":true,"show_pagination_mobile":true,"use_sticky_atc":true,"use_sticky_atc_on_mobile":false,"enable_dynamic_checkout":false,"sticky_atc_wishtlist":true,"sticky_atc_compare":false}},"product-details-tabs":{"type":"product-details-tabs","blocks":{"description":{"type":"description","settings":{"header":"Product description"}},"tab":{"type":"tab","settings":{"header":"Shipping","content":"<p><strong>How much does shipping cost?<\/strong><\/p><p>Enjoy flat-rate shipping across Australia for just $12.95! Plus, orders over $149 ship for free.<\/p><p><strong>When do you ship orders?<\/strong><\/p><p>Get ready to receive your order! We typically dispatch most orders within 2 business days from our store in Warwick QLD.<\/p><p>Keep an eye on your inbox! We'll shoot you an email with a tracking number once your item\/s are dispatched.<\/p><p><strong>Who do you use to ship orders through?<\/strong><\/p><p>We send your orders via Australia Post.<\/p>","content_page":""}}},"block_order":["description","tab"],"disabled":true,"settings":{"container":"container","color_scheme":"badge-hot","default_open":true,"padding_top":0,"padding_bottom":0,"custom_class":"","animations":"inherit"}},"product-recommendations":{"type":"product-recommendations","settings":{"container":"container","color_scheme":"badge-hot","remove_params":false,"heading":"We thought you might like these!","heading_size":"h2","text_align":"center","limit":8,"columns":6,"column_gap":30,"enable_slider":true,"use_scroll_mobile":true,"padding_top":10,"padding_bottom":0,"custom_class":"","animations":"inherit"}}},"order":["breadcrumb","main","product-details-tabs","product-recommendations"]}
+{
+  "sections": {
+    "breadcrumb": {
+      "type": "breadcrumb",
+      "custom_css": [
+        ".m-breadcrumb--item {padding-top: 8px; padding-bottom: 8px; padding-left: 12px; padding-right: 12px; font-size: 12px;}",
+        ".m-breadcrumb--item-current {color: rgb(var(--color-foreground));}"
+      ],
+      "settings": {
+        "container": "container",
+        "text_alignment": "left",
+        "hide_current": false,
+        "hide_on_mb": false,
+        "animations": "inherit"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_saving": true,
+            "sale_badge_type": "fixed_amount"
+          }
+        },
+        "afterpay_on_site_messaging_payments_messaging_Mn8XCh": {
+          "type": "shopify://apps/afterpay-on-site-messaging/blocks/payments-messaging/f45a5524-d177-4475-bf59-281efd2215a8",
+          "settings": {
+            "text_align": "inherit",
+            "margin_top": 16,
+            "margin_bottom": 16,
+            "color": "",
+            "size": "md",
+            "intro_text": "or",
+            "show_interest_free": true,
+            "payment_amount_is_bold": true,
+            "show_with": true,
+            "logo_type": "compact-badge",
+            "logo_theme": "black-on-mint",
+            "modal_link_style": "circled-info-icon",
+            "modal_theme": "mint",
+            "breakpoint": 749,
+            "text_align_mobile": "inherit",
+            "margin_top_mobile": 16,
+            "margin_bottom_mobile": 16,
+            "show_lower_limit": true,
+            "show_upper_limit": true,
+            "show_if_outside_limits": true,
+            "product": "{{product}}"
+          }
+        },
+        "custom_liquid_c4JeGh": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<!-- Zip WIDGET -->\n{%render 'zip-widget'%}\n<span style=\"cursor:pointer\" id=\"shopify-zip-prod-widget\" data-zm-asset=\"productwidget\" data-zm-widget=\"popup\" data-zm-popup-asset=\"termsdialog\"></span>\n<!-- end Zip WIDGET -->"
+          }
+        },
+        "foxkit_sales_boost_stock_countdown_L3grj6": {
+          "type": "shopify://apps/foxkit-upsell-bundles/blocks/stock-countdown/13f41957-6b79-47c1-99a2-e52431f06fff",
+          "disabled": true,
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "inventory_status_w8CjDz": {
+          "type": "inventory_status",
+          "settings": {
+            "show_indicator_bar": true,
+            "normal_text": "",
+            "low_text": "<p>- Hurry! Limited stock left.</p>",
+            "outofstock_text": "",
+            "backordered_text": "<p>Backordered</p>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "size_title": "Size"
+          }
+        },
+        "foxkit_aio_upsell_quantity_breaks_PQnQe3": {
+          "type": "shopify://apps/foxkit-upsell-bundles/blocks/quantity-breaks/13f41957-6b79-47c1-99a2-e52431f06fff",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "custom_liquid_rDn6Ya": {
+          "type": "custom_liquid",
+          "name": "Pickup Only",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.pickup_only.value == true %}\n  <div\n    role=\"note\"\n    style=\"\n      display: flex;\n      align-items: flex-start;\n      gap: 10px;\n      margin: 14px 0;\n      padding: 12px 14px;\n      background: #f6f3ee;\n      border-left: 4px solid #b07a3f;\n      border-radius: 6px;\n      font-size: 0.95em;\n      line-height: 1.4;\n    \"\n  >\n    <span style=\"font-size: 1.1em; line-height: 1;\">📍</span>\n    <div>\n      <strong style=\"display: block; margin-bottom: 2px;\">\n        Pickup only\n      </strong>\n      This item is available for in-store pickup only (Warwick) and is not eligible for shipping.\n    </div>\n  </div>\n{% endif %}"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_atc_button": true,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "addons": {
+          "type": "addons",
+          "settings": {
+            "show_atcp": false,
+            "show_ask_a_question": true,
+            "show_social": true
+          }
+        },
+        "shipping_AJN7zL": {
+          "type": "shipping",
+          "settings": {
+            "show_delivery_times": true,
+            "deliver_text": "Estimated Delivery:",
+            "deliver_days": "7",
+            "date_format": "%b %d",
+            "show_shipping_text": true,
+            "shipping_text": "<p><strong>Flat Rate Shipping: </strong>$9.95 Australia wide, <br/>sent from Warwick, QLD.</p>"
+          }
+        },
+        "collapsible_tab_HVk9Dp": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Details",
+            "content": "",
+            "liquid": "{{product.description}}",
+            "default_open": true
+          }
+        },
+        "collapsible_tab_aiKAVg": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping",
+            "content": "<p>$9.95 flat-rate shipping Australia-wide.</p><p>Free shipping on orders over $79.</p><p>Sometimes products may arrive separately, but you will only be charged one delivery fee per order.</p><p><a href=\"https://alley-cat-trading.gorgias.help/en-US/articles/shipping-and-tracking-212290\" target=\"_blank\" title=\"Shipping and tracking\">Read more</a></p>",
+            "liquid": "",
+            "default_open": false
+          }
+        },
+        "collapsible_tab_g4N3wa": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Returns",
+            "content": "<p><a href=\"/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\">Read more</a></p>",
+            "liquid": "",
+            "default_open": false
+          }
+        },
+        "trust_badge_JiFXUr": {
+          "type": "trust_badge",
+          "settings": {
+            "trust_badges_text": "<p>Guaranteed safe and secure checkout</p>",
+            "trust_badges_image": "shopify://shop_images/trust-badges-gray.png",
+            "trust_badges_image_width": "350px",
+            "position": "below"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "afterpay_on_site_messaging_payments_messaging_Mn8XCh",
+        "custom_liquid_c4JeGh",
+        "foxkit_sales_boost_stock_countdown_L3grj6",
+        "inventory_status_w8CjDz",
+        "variant_picker",
+        "foxkit_aio_upsell_quantity_breaks_PQnQe3",
+        "custom_liquid_rDn6Ya",
+        "buy_buttons",
+        "addons",
+        "shipping_AJN7zL",
+        "collapsible_tab_HVk9Dp",
+        "collapsible_tab_aiKAVg",
+        "collapsible_tab_g4N3wa",
+        "trust_badge_JiFXUr"
+      ],
+      "custom_css": [
+        ".m-color-badge-sale {background-color: #b30000;}",
+        ".main-product__block + .main-product__block {margin-top: 16px;}",
+        ".m-collapsible--button {padding-top: 5px;}"
+      ],
+      "settings": {
+        "container": "container",
+        "layout": "layout-6",
+        "show_atwl": true,
+        "enable_history_state": true,
+        "enable_variant_group_images": false,
+        "disable_selected_variant_default": false,
+        "show_featured_media": true,
+        "show_zoom_button": true,
+        "enable_video_autoplay": false,
+        "show_nav_media_mobile": true,
+        "show_pagination_mobile": true,
+        "use_sticky_atc": true,
+        "use_sticky_atc_on_mobile": false,
+        "enable_dynamic_checkout": false,
+        "sticky_atc_wishtlist": true,
+        "sticky_atc_compare": false
+      }
+    },
+    "product-details-tabs": {
+      "type": "product-details-tabs",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {
+            "header": "Product description"
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "header": "Shipping",
+            "content": "<p><strong>How much does shipping cost?</strong></p><p>Flat-rate shipping across Australia is $9.95. Orders over $79 ship free.</p><p><strong>When do you ship orders?</strong></p><p>Most orders are dispatched within 2 business days from our Warwick, Queensland store.</p><p><strong>Who do you use to ship orders through?</strong></p><p>We send orders via Australia Post and provide tracking once they are dispatched.</p>",
+            "content_page": ""
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "tab"
+      ],
+      "disabled": true,
+      "settings": {
+        "container": "container",
+        "color_scheme": "badge-hot",
+        "default_open": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "container": "container",
+        "color_scheme": "badge-hot",
+        "remove_params": false,
+        "heading": "We thought you might like these!",
+        "heading_size": "h2",
+        "text_align": "center",
+        "limit": 8,
+        "columns": 6,
+        "column_gap": 30,
+        "enable_slider": true,
+        "use_scroll_mobile": true,
+        "padding_top": 10,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "breadcrumb",
+    "main",
+    "product-details-tabs",
+    "product-recommendations"
+  ]
+}

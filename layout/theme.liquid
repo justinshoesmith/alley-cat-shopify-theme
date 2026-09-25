@@ -59,6 +59,7 @@
     {{ 'modules.css' | asset_url | stylesheet_tag }}
 
     {% render 'style-tags' %}
+    {{ 'alley-cat-brand.css' | asset_url | stylesheet_tag }}
 
     <script src="{{ 'vendor.min.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'theme-global.js' | asset_url }}" defer="defer"></script>
