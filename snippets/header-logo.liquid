@@ -12,7 +12,6 @@
   assign logo_svg = header_settings.logo_svg
   assign logo_transparent_svg = header_settings.logo_transparent_svg
   assign logo_transparent = header_settings.logo_transparent
-  assign brand_logo = 'alley-cat-trading-stacked.svg' | inline_asset_content
 
   if logo_svg != blank
     assign default_logo = logo_svg
@@ -23,7 +22,7 @@
 {% else %}
 <div class="{{ class | strip_newlines }}">
 {% endif %}
-{% if default_logo != blank or logo_svg != blank or logo_transparent_svg != blank or logo_transparent != blank or brand_logo != blank %}
+  {% if default_logo != blank or logo_svg != blank or logo_transparent_svg != blank or logo_transparent != blank %}
       <a href="{{ routes.root_url }}" class="m-logo__image m:block" title="{{ shop.name }}">
         {% if logo_svg != blank %}
           <div class="m-logo__image-default m-image">
@@ -31,16 +30,18 @@
             <img src="{{ logo_svg }}" alt="{{ logo_alt }}" width="auto" height="auto" loading="lazy">
             {% comment %} theme-check-enable RemoteAsset {% endcomment %}
           </div>
-        {% elsif default_logo != blank %}
-          <div class="m-logo__image-default m-image">
-            {{ section.settings.logo | image_url: width: section.settings.width | image_tag:
-              class: 'm:inline-block',
-              widths: '50, 100, 150, 200, 250, 300, 400, 500',
-              alt: logo_alt
-            }}
-          </div>
         {% else %}
-          <span class="m-logo__brand" role="img" aria-label="{{ logo_alt }}">{{ brand_logo }}</span>
+          <div class="m-logo__image-default m-image">
+            {% if default_logo != blank %}
+              {{ section.settings.logo | image_url: width: section.settings.width | image_tag:
+                class: 'm:inline-block',
+                widths: '50, 100, 150, 200, 250, 300, 400, 500',
+                alt: logo_alt
+              }}
+            {% else %}
+              <strong>{{ header_settings.logo_text | default: shop.name }}</strong>
+            {% endif %}
+          </div>
         {% endif %}
 
         {% if transparent_on_top %}
