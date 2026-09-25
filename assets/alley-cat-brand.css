@@ -422,6 +422,7 @@ textarea {
 .m-header .m-hamburger-box__inner::after { background: currentColor; }
 .m-header .m-menu-drawer__wrapper,
 .m-header .m-menu-drawer__content { background: var(--act-ivory); }
+.m-sidebar .m-sidebar--content { background: var(--act-ivory); }
 .alley-sourcing {
   background: var(--act-ivory);
   border-block: 1px solid var(--act-line);
