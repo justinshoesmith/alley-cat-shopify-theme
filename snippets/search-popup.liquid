@@ -102,11 +102,18 @@
               %}
             </div>
           </div>
-          {%- if settings.popular_search_queries != blank -%}
+          {%- liquid
+            assign popular_search_queries = settings.popular_search_queries
+            assign normalized_queries = popular_search_queries | remove: ' ' | downcase
+            if normalized_queries == 't-shirt,blue,jacket'
+              assign popular_search_queries = 'Vintage, Collectibles, Homewares'
+            endif
+          -%}
+          {%- if popular_search_queries != blank -%}
           <div class="m-search-popular m:flex md:m:justify-center m:flex-wrap" data-popular-searches>
               <span class="m-search-popular--label">{{ 'general.search.popular_searches' | t }}:</span>
               <div class="m:flex m:items-center m:flex-wrap">
-                {%- assign popular_queries = settings.popular_search_queries | split: ',' -%}
+                {%- assign popular_queries = popular_search_queries | split: ',' -%}
                 {% for qr in popular_queries %}
                   <a
                       class="m-search-popular--item"

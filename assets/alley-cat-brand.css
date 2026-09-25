@@ -459,6 +459,25 @@ textarea {
   .m-header .m-logo__brand,
   .m-header.stuck .m-logo__brand,
   .m-header.header-sticky-always .m-logo__brand { width: var(--logo-width-mobile); }
+  .m-cart__header { display: none; }
+  .m-cart__body .m-cart-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: .75rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--act-line);
+  }
+  .m-cart__body .m-cart-item .m-cart__column {
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+    text-align: left;
+  }
+  .m-cart__body .m-cart-item .m-cart__column--price { grid-row: 2; }
+  .m-cart__body .m-cart-item .m-cart__column--quantity { grid-row: 3; }
+  .m-cart__body .m-cart-item .m-cart-item__info { min-width: 0; flex: 1; }
+  .m-cart__body .m-cart-item .m-cart-item__price-discounted,
+  .m-cart__body .m-cart-item .m-cart__discount--item { justify-content: flex-start; }
 }
 @media (prefers-reduced-motion: reduce) {
   .m-product-card__media { transition: none; }
