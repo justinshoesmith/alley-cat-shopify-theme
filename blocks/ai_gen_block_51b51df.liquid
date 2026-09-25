@@ -1,0 +1,827 @@
+{% doc %}
+  @prompt
+    store details page showing address, opening hours for retail and when we ship online orders, social media buttons, maybe a photo or photos of the store. details about the history of the store with a link to the history site for the store. ability to add more links in the future. link to the contact page., just have the opening times as single text field. must have standard hours and the ability to add special or holiday hours, less space under the opening hours heading. change the our story section to building history with a link to 69dragonstreet.com for history on the building. maybe add a link to the about us page as well?, give the ability to add a few photos, maybe a few small ones or a large one with 2 small ones
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-store-details-{{ ai_gen_id }} {
+    padding: {{ block.settings.section_padding }}px;
+    background-color: {{ block.settings.background_color }};
+    color: {{ block.settings.text_color }};
+  }
+
+  .ai-store-details-container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ai-store-details-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+
+  .ai-store-details-content-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .ai-store-details-heading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.heading_size }}px;
+    color: {{ block.settings.heading_color }};
+    margin: 0 0 24px;
+  }
+
+  .ai-store-details-section-{{ ai_gen_id }} {
+    padding: 24px;
+    background-color: {{ block.settings.card_background }};
+    border-radius: {{ block.settings.border_radius }}px;
+    border: 1px solid {{ block.settings.border_color }};
+  }
+
+  .ai-store-details-section-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.section_title_size }}px;
+    font-weight: 600;
+    color: {{ block.settings.heading_color }};
+    margin: 0 0 16px;
+  }
+
+  .ai-store-details-opening-hours-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.section_title_size }}px;
+    font-weight: 600;
+    color: {{ block.settings.heading_color }};
+    margin: 0 0 8px;
+  }
+
+  .ai-store-details-address-{{ ai_gen_id }} {
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .ai-store-details-hours-text-{{ ai_gen_id }} {
+    line-height: 1.6;
+    white-space: pre-line;
+    margin-bottom: 16px;
+  }
+
+  .ai-store-details-special-hours-{{ ai_gen_id }} {
+    background-color: {{ block.settings.special_hours_bg_color }};
+    padding: 16px;
+    border-radius: {{ block.settings.border_radius }}px;
+    border-left: 4px solid {{ block.settings.accent_color }};
+    margin-top: 16px;
+  }
+
+  .ai-store-details-special-hours-title-{{ ai_gen_id }} {
+    font-weight: 600;
+    margin: 0 0 8px;color: {{ block.settings.heading_color }};
+  }
+
+  .ai-store-details-special-hours-text-{{ ai_gen_id }} {
+    line-height: 1.6;
+    white-space: pre-line;}
+
+  .ai-store-details-shipping-{{ ai_gen_id }} {
+    background-color: {{ block.settings.shipping_bg_color }};
+    padding: 16px;
+    border-radius: {{ block.settings.border_radius }}px;
+    border-left: 4px solid {{ block.settings.accent_color }};
+  }
+
+  .ai-store-details-shipping-title-{{ ai_gen_id }} {
+    font-weight: 600;
+    margin: 0 0 8px;
+    color: {{ block.settings.heading_color }};
+  }
+
+  .ai-store-details-history-{{ ai_gen_id }} {
+    line-height: 1.6;
+  }
+
+  .ai-store-details-link-{{ ai_gen_id }} {
+    color: {{ block.settings.link_color }};
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+
+  .ai-store-details-link-{{ ai_gen_id }}:hover {
+    color: {{ block.settings.link_hover_color }};
+  }
+
+  .ai-store-details-links-grid-{{ ai_gen_id }} {
+    display: grid;
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  .ai-store-details-contact-link-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: {{ block.settings.button_bg_color }};
+    color: {{ block.settings.button_text_color }};
+    text-decoration: none;
+    border-radius: {{ block.settings.border_radius }}px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    justify-self: start;
+  }
+
+  .ai-store-details-contact-link-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_color }};
+  }
+
+  .ai-store-details-social-{{ ai_gen_id }} {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .ai-store-details-social-link-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: {{ block.settings.social_bg_color }};
+    color: {{ block.settings.social_icon_color }};
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .ai-store-details-social-link-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.social_hover_color }};
+    transform: translateY(-2px);
+  }
+
+  .ai-store-details-social-link-{{ ai_gen_id }} svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ai-store-details-images-{{ ai_gen_id }} {
+    display: grid;
+    gap: 16px;
+  }
+
+  .ai-store-details-images-grid-{{ ai_gen_id }} {
+    display: grid;
+    gap: 16px;
+  }
+
+  .ai-store-details-images-grid-{{ ai_gen_id }}.layout-all-small {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ai-store-details-images-grid-{{ ai_gen_id }}.layout-large-small {
+    grid-template-columns: 1fr;grid-template-rows: 2fr 1fr;
+  }
+
+  .ai-store-details-images-grid-{{ ai_gen_id }}.layout-large-small .ai-store-details-small-images-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .ai-store-details-image-{{ ai_gen_id }} {
+    width: 100%;
+    object-fit: cover;
+    border-radius: {{ block.settings.border_radius }}px;
+  }
+
+  .ai-store-details-image-large-{{ ai_gen_id }} {
+    height: 400px;
+  }
+
+  .ai-store-details-image-small-{{ ai_gen_id }} {
+    height: 200px;
+  }
+
+  .ai-store-details-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    background-color: #f4f4f4;
+    border-radius: {{ block.settings.border_radius }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-store-details-image-placeholder-large-{{ ai_gen_id }} {
+    height: 400px;
+  }
+
+  .ai-store-details-image-placeholder-small-{{ ai_gen_id }} {
+    height: 200px;
+  }
+
+  .ai-store-details-image-placeholder-{{ ai_gen_id }} svg {
+    width: 80px;
+    height: 80px;
+    opacity: 0.3;
+  }
+
+  .ai-store-details-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-store-details-grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .ai-store-details-section-{{ ai_gen_id }} {
+      padding: 20px;
+    }
+
+    .ai-store-details-social-{{ ai_gen_id }} {
+      justify-content: center;
+    }
+
+    .ai-store-details-images-grid-{{ ai_gen_id }}.layout-all-small {
+      grid-template-columns: 1fr;
+    }
+
+    .ai-store-details-images-grid-{{ ai_gen_id }}.layout-large-small .ai-store-details-small-images-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+    }
+
+    .ai-store-details-image-large-{{ ai_gen_id }},
+    .ai-store-details-image-placeholder-large-{{ ai_gen_id }} {
+      height: 250px;
+    }
+
+    .ai-store-details-image-small-{{ ai_gen_id }},
+    .ai-store-details-image-placeholder-small-{{ ai_gen_id }} {
+      height: 180px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-store-details-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-store-details-container-{{ ai_gen_id }}">
+    {% if block.settings.main_heading != blank %}
+      <h1 class="ai-store-details-heading-{{ ai_gen_id }}">{{ block.settings.main_heading }}</h1>
+    {% endif %}
+
+    <div class="ai-store-details-grid-{{ ai_gen_id }}">
+      <div class="ai-store-details-content-{{ ai_gen_id }}">
+        <div class="ai-store-details-section-{{ ai_gen_id }}">
+          <h2 class="ai-store-details-section-title-{{ ai_gen_id }}">Store Location</h2>
+          {% if block.settings.store_address != blank %}
+            <div class="ai-store-details-address-{{ ai_gen_id }}">
+              {{ block.settings.store_address | newline_to_br }}
+            </div>
+          {% endif %}
+
+          {% if block.settings.show_opening_hours %}
+            <h3 class="ai-store-details-opening-hours-title-{{ ai_gen_id }}">Opening Hours</h3>
+            {% if block.settings.opening_hours != blank %}
+              <div class="ai-store-details-hours-text-{{ ai_gen_id }}">
+                {{ block.settings.opening_hours }}
+              </div>
+            {% endif %}
+
+            {% if block.settings.special_hours != blank %}
+              <div class="ai-store-details-special-hours-{{ ai_gen_id }}">
+                <div class="ai-store-details-special-hours-title-{{ ai_gen_id }}">{{ block.settings.special_hours_title }}</div>
+                <div class="ai-store-details-special-hours-text-{{ ai_gen_id }}">{{ block.settings.special_hours }}</div>
+              </div>
+            {% endif %}
+          {% endif %}
+        </div>
+
+        {% if block.settings.show_shipping_info %}
+          <div class="ai-store-details-section-{{ ai_gen_id }}">
+            <h2 class="ai-store-details-section-title-{{ ai_gen_id }}">Online Orders</h2>
+            <div class="ai-store-details-shipping-{{ ai_gen_id }}">
+              <div class="ai-store-details-shipping-title-{{ ai_gen_id }}">{{ block.settings.shipping_title }}</div>
+              <div>{{ block.settings.shipping_info }}</div>
+            </div>
+          </div>
+        {% endif %}
+
+        {% if block.settings.building_history != blank %}
+          <div class="ai-store-details-section-{{ ai_gen_id }}">
+            <h2 class="ai-store-details-section-title-{{ ai_gen_id }}">Building History</h2>
+            <div class="ai-store-details-history-{{ ai_gen_id }}">
+              {{ block.settings.building_history }}
+              <br><br>
+              <a href="https://69dragonstreet.com" class="ai-store-details-link-{{ ai_gen_id }}" target="_blank" rel="noopener">
+                Learn more about our historic building
+              </a>
+            </div>
+          </div>
+        {% endif %}
+
+        <div class="ai-store-details-section-{{ ai_gen_id }}">
+          <h2 class="ai-store-details-section-title-{{ ai_gen_id }}">Connect With Us</h2>
+          
+          {% if block.settings.show_social_media %}
+            <div class="ai-store-details-social-{{ ai_gen_id }}">
+              {% if block.settings.facebook_url != blank %}
+                <a href="{{ block.settings.facebook_url }}" class="ai-store-details-social-link-{{ ai_gen_id }}" target="_blank" rel="noopener" aria-label="Facebook">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </a>
+              {% endif %}
+              {% if block.settings.instagram_url != blank %}
+                <a href="{{ block.settings.instagram_url }}" class="ai-store-details-social-link-{{ ai_gen_id }}" target="_blank" rel="noopener" aria-label="Instagram">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </a>
+              {% endif %}
+              {% if block.settings.twitter_url != blank %}
+                <a href="{{ block.settings.twitter_url }}" class="ai-store-details-social-link-{{ ai_gen_id }}" target="_blank" rel="noopener" aria-label="Twitter">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                  </svg>
+                </a>
+              {% endif %}
+            </div>
+          {% endif %}
+
+          <div class="ai-store-details-links-grid-{{ ai_gen_id }}">
+            {% if block.settings.contact_page != blank %}
+              <a href="{{ block.settings.contact_page.url }}" class="ai-store-details-contact-link-{{ ai_gen_id }}">
+                {{ block.settings.contact_link_text }}
+              </a>
+            {% endif %}
+            
+            {% if block.settings.about_page != blank %}
+              <a href="{{ block.settings.about_page.url }}" class="ai-store-details-link-{{ ai_gen_id }}">
+                {{ block.settings.about_link_text }}
+              </a>
+            {% endif %}
+            {% if block.settings.additional_link_1 != blank %}
+              <a href="{{ block.settings.additional_link_1 }}" class="ai-store-details-link-{{ ai_gen_id }}">
+                {{ block.settings.additional_link_1_text }}
+              </a>
+            {% endif %}
+            
+            {% if block.settings.additional_link_2 != blank %}
+              <a href="{{ block.settings.additional_link_2 }}" class="ai-store-details-link-{{ ai_gen_id }}">
+                {{ block.settings.additional_link_2_text }}
+              </a>
+            {% endif %}
+            
+            {% if block.settings.additional_link_3 != blank %}
+              <a href="{{ block.settings.additional_link_3 }}" class="ai-store-details-link-{{ ai_gen_id }}">
+                {{ block.settings.additional_link_3_text }}
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <div class="ai-store-details-images-{{ ai_gen_id }}">
+        {% if block.settings.photo_layout == 'all_small' %}
+          <div class="ai-store-details-images-grid-{{ ai_gen_id }} layout-all-small">
+            {% for i in (1..4) %}
+              {% assign image_key = 'store_image_' | append: i %}
+              {% assign image = block.settings[image_key] %}
+              
+              {% if image %}
+                <img
+                  src="{{ image | image_url: width: 400 }}"
+                  alt="{{ image.alt | escape }}"
+                  class="ai-store-details-image-{{ ai_gen_id }} ai-store-details-image-small-{{ ai_gen_id }}"
+                  loading="lazy"
+                  width="400"
+                  height="200"
+                >
+              {% else %}
+                <div class="ai-store-details-image-placeholder-{{ ai_gen_id }} ai-store-details-image-placeholder-small-{{ ai_gen_id }}">
+                  {{'image' | placeholder_svg_tag }}<div class="ai-store-details-empty-state-{{ ai_gen_id }}">
+                    Add store photo {{ i }}
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% else %}
+          <div class="ai-store-details-images-grid-{{ ai_gen_id }} layout-large-small">
+            {% if block.settings.store_image_1 %}
+              <img
+                src="{{ block.settings.store_image_1 | image_url: width: 600 }}"
+                alt="{{ block.settings.store_image_1.alt | escape }}"
+                class="ai-store-details-image-{{ ai_gen_id }} ai-store-details-image-large-{{ ai_gen_id }}"
+                loading="lazy"
+                width="600"
+                height="400"
+              >
+            {% else %}
+              <div class="ai-store-details-image-placeholder-{{ ai_gen_id }} ai-store-details-image-placeholder-large-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+                <div class="ai-store-details-empty-state-{{ ai_gen_id }}">
+                  Add main store photo
+                </div>
+              </div>
+            {% endif %}<div class="ai-store-details-small-images-{{ ai_gen_id }}">
+              {% for i in (2..3) %}
+                {% assign image_key = 'store_image_' | append: i %}
+                {% assign image = block.settings[image_key] %}
+                
+                {% if image %}
+                  <img
+                    src="{{ image | image_url: width: 300 }}"
+                    alt="{{ image.alt | escape }}"
+                    class="ai-store-details-image-{{ ai_gen_id }} ai-store-details-image-small-{{ ai_gen_id }}"
+                    loading="lazy"
+                    width="300"
+                    height="200"
+                  >
+                {% else %}
+                  <div class="ai-store-details-image-placeholder-{{ ai_gen_id }} ai-store-details-image-placeholder-small-{{ ai_gen_id }}">
+                    {{ 'image' | placeholder_svg_tag }}
+                    <div class="ai-store-details-empty-state-{{ ai_gen_id }}">
+                      Add photo {{ i }}
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Store details",
+  "settings": [
+    {
+      "type": "header",
+      "content": "General"
+    },
+    {
+      "type": "text",
+      "id": "main_heading",
+      "label": "Main heading",
+      "default": "Visit Our Store"
+    },
+    {
+      "type": "header",
+      "content": "Store location"
+    },
+    {
+      "type": "textarea",
+      "id": "store_address",
+      "label": "Store address",
+      "default": "123 Main Street\nYour City, State 12345\nPhone: (555) 123-4567"
+    },
+    {
+      "type": "header",
+      "content": "Opening hours"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_opening_hours",
+      "label": "Show opening hours",
+      "default": true
+    },
+    {
+      "type": "textarea",
+      "id": "opening_hours",
+      "label": "Standard opening hours",
+      "default": "Monday - Friday: 9:00 AM - 6:00 PM\nSaturday: 10:00 AM - 4:00 PM\nSunday: Closed"
+    },
+    {
+      "type": "text",
+      "id": "special_hours_title",
+      "label": "Special hours title",
+      "default": "Holiday Hours"
+    },
+    {
+      "type": "textarea",
+      "id": "special_hours",
+      "label": "Special or holiday hours",
+      "placeholder": "Christmas Eve: 9:00 AM - 2:00 PM\nChristmas Day: Closed\nNew Year's Day: Closed"
+    },
+    {
+      "type": "header",
+      "content": "Online shipping"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_shipping_info",
+      "label": "Show shipping information",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "shipping_title",
+      "label": "Shipping title",
+      "default": "Online Order Processing"
+    },
+    {
+      "type": "textarea",
+      "id": "shipping_info",
+      "label": "Shipping information",
+      "default": "Orders placed before 2:00 PM are processed the same day. We ship Monday through Friday."
+    },
+    {
+      "type": "header",
+      "content": "Building history"
+    },
+    {
+      "type": "richtext",
+      "id": "building_history",
+      "label": "Building history",
+      "default": "<p>Our store is located in a historic building dating back to the early 1900s. This beautiful heritage building has been carefully preserved while being modernized for today's retail needs.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Social media"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_social_media",
+      "label": "Show social media links",
+      "default": true
+    },
+    {
+      "type": "url",
+      "id": "facebook_url",
+      "label": "Facebook URL"
+    },
+    {
+      "type": "url",
+      "id": "instagram_url",
+      "label": "Instagram URL"
+    },
+    {
+      "type": "url",
+      "id": "twitter_url",
+      "label": "Twitter URL"
+    },
+    {
+      "type": "header",
+      "content": "Contact and links"
+    },
+    {
+      "type": "page",
+      "id": "contact_page",
+      "label": "Contact page"
+    },
+    {
+      "type": "text",
+      "id": "contact_link_text",
+      "label": "Contact link text",
+      "default": "Contact Us"
+    },
+    {
+      "type": "page",
+      "id": "about_page",
+      "label": "About page"
+    },
+    {
+      "type": "text",
+      "id": "about_link_text",
+      "label": "About link text",
+      "default": "About Us"
+    },
+    {
+      "type": "url",
+      "id": "additional_link_1",
+      "label": "Additional link 1"
+    },
+    {
+      "type": "text",
+      "id": "additional_link_1_text",
+      "label": "Additional link 1 text"
+    },
+    {
+      "type": "url",
+      "id": "additional_link_2",
+      "label": "Additional link 2"
+    },
+    {
+      "type": "text",
+      "id": "additional_link_2_text",
+      "label": "Additional link 2 text"
+    },
+    {
+      "type": "url",
+      "id": "additional_link_3",
+      "label": "Additional link 3"
+    },
+    {
+      "type": "text",
+      "id": "additional_link_3_text",
+      "label": "Additional link 3 text"
+    },
+    {
+      "type": "header",
+      "content": "Store images"
+    },
+    {
+      "type": "select",
+      "id": "photo_layout",
+      "label": "Photo layout",
+      "options": [
+        {
+          "value": "large_small",
+          "label": "One large + two small"
+        },
+        {
+          "value": "all_small",
+          "label": "Four small photos"
+        }
+      ],
+      "default": "large_small"
+    },
+    {
+      "type": "image_picker",
+      "id": "store_image_1",
+      "label": "Store image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "store_image_2",
+      "label": "Store image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "store_image_3",
+      "label": "Store image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "store_image_4",
+      "label": "Store image 4"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Section padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 24,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Main heading size",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "section_title_size",
+      "min": 16,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "label": "Section title size",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Card background color",
+      "default": "#f8f8f8"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "subtext_color",
+      "label": "Subtext color",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color",
+      "default": "#007acc"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Link color",
+      "default": "#007acc"
+    },
+    {
+      "type": "color",
+      "id": "link_hover_color",
+      "label": "Link hover color",
+      "default": "#005a99"
+    },
+    {
+      "type": "color",
+      "id": "shipping_bg_color",
+      "label": "Shipping info background",
+      "default": "#e8f4fd"
+    },
+    {
+      "type": "color",
+      "id": "special_hours_bg_color",
+      "label": "Special hours background",
+      "default": "#fff3cd"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button background",
+      "default": "#007acc"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_color",
+      "label": "Button hover color",
+      "default": "#005a99"
+    },
+    {
+      "type": "color",
+      "id": "social_bg_color",
+      "label": "Social button background",
+      "default": "#f0f0f0"
+    },
+    {
+      "type": "color",
+      "id": "social_icon_color",
+      "label": "Social icon color",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "social_hover_color",
+      "label": "Social button hover color",
+      "default": "#007acc"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Store details"
+    }
+  ]
+}
+{% endschema %}

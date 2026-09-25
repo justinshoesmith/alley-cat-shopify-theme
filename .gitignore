@@ -1,0 +1,10 @@
+# Local Shopify CLI state and credentials
+.shopify/
+.env
+.env.*
+!.env.example
+config/settings_data.json
+
+# Operating-system files
+.DS_Store
+Thumbs.db

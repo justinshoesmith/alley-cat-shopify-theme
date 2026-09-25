@@ -1,0 +1,600 @@
+{% doc %}
+  @prompt
+    Contact us page with Gorgias embedded form on one side. Multi-column design. Include address, phone, directions link, link to retrun and exchange portal, and link to faqs. make it easy to add additional info in the future. Title page and page description should be at the top of the page.
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-contact-page-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  .ai-contact-header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .ai-contact-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 16px;
+    line-height: 1.2;
+  }
+
+  .ai-contact-description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.description_size }}px;
+    color: {{ block.settings.text_color }};
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+
+  .ai-contact-content-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+
+  .ai-contact-info-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .ai-contact-section-{{ ai_gen_id }} {
+    background-color: {{ block.settings.info_background_color }};
+    padding: 30px;
+    border-radius: {{ block.settings.border_radius }}px;
+    border: 1px solid {{ block.settings.border_color }};
+  }
+
+  .ai-contact-section-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.section_title_size }}px;
+    color: {{ block.settings.section_title_color }};
+    margin: 0 0 20px;
+    font-weight: 600;
+  }
+
+  .ai-contact-item-{{ ai_gen_id }} {
+    margin-bottom: 16px;
+  }
+
+  .ai-contact-item-{{ ai_gen_id }}:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-contact-label-{{ ai_gen_id }} {
+    font-weight: 600;
+    color: {{ block.settings.label_color }};
+    margin-bottom: 4px;
+    font-size: {{ block.settings.label_size }}px;
+  }
+
+  .ai-contact-value-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.text_size }}px;
+    line-height: 1.4;
+  }
+
+  .ai-contact-link-{{ ai_gen_id }} {
+    color: {{ block.settings.link_color }};
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .ai-contact-link-{{ ai_gen_id }}:hover {
+    color: {{ block.settings.link_hover_color }};text-decoration: underline;
+  }
+
+  .ai-contact-form-container-{{ ai_gen_id }} {
+    background-color: {{ block.settings.form_background_color }};
+    padding: 40px;
+    border-radius: {{ block.settings.border_radius }}px;
+    border: 1px solid {{ block.settings.border_color }};
+    min-height: 500px;
+  }
+
+  .ai-contact-form-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.section_title_size }}px;
+    color: {{ block.settings.section_title_color }};
+    margin: 0 0 24px;
+    font-weight: 600;
+  }
+
+  .ai-gorgias-embed-{{ ai_gen_id }} {
+    width: 100%;
+    min-height: 400px;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .ai-gorgias-placeholder-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    background-color: #f8f9fa;
+    border: 2px dashed #dee2e6;
+    border-radius: 8px;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .ai-gorgias-placeholder-icon-{{ ai_gen_id }} {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 16px;
+    opacity: 0.5;
+  }
+
+  .ai-gorgias-placeholder-text-{{ ai_gen_id }} {
+    color: #6c757d;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .ai-gorgias-placeholder-subtext-{{ ai_gen_id }} {
+    color: #adb5bd;
+    font-size: 14px;
+    max-width: 300px;}
+
+  .ai-additional-links-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ai-additional-link-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: {{ block.settings.button_background_color }};
+    color: {{ block.settings.button_text_color }};
+    text-decoration: none;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    transition: background-color 0.3s ease;
+    font-size: {{ block.settings.text_size }}px;
+  }
+
+  .ai-additional-link-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_color }};
+    color: {{ block.settings.button_text_color }};
+  }
+
+  .ai-additional-link-icon-{{ ai_gen_id }} {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-contact-content-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;gap: 40px;
+    }
+
+    .ai-contact-page-{{ ai_gen_id }} {
+      padding: 20px16px;
+    }
+
+    .ai-contact-form-container-{{ ai_gen_id }},
+    .ai-contact-section-{{ ai_gen_id }} {
+      padding: 24px;
+    }
+
+    .ai-contact-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.8 }}px;
+    }
+  }
+{% endstyle %}<div class="ai-contact-page-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-contact-header-{{ ai_gen_id }}">
+    {% if block.settings.page_title != blank %}
+      <h1 class="ai-contact-title-{{ ai_gen_id }}">{{ block.settings.page_title }}</h1>
+    {% endif %}
+    {% if block.settings.page_description != blank %}
+      <div class="ai-contact-description-{{ ai_gen_id }}">{{ block.settings.page_description }}</div>
+    {% endif %}
+  </div>
+
+  <div class="ai-contact-content-{{ ai_gen_id }}">
+    <div class="ai-contact-info-{{ ai_gen_id }}">
+      <div class="ai-contact-section-{{ ai_gen_id }}">
+        <h2 class="ai-contact-section-title-{{ ai_gen_id }}">Get in touch</h2>
+        
+        {% if block.settings.store_address != blank %}
+          <div class="ai-contact-item-{{ ai_gen_id }}">
+            <div class="ai-contact-label-{{ ai_gen_id }}">Address</div>
+            <div class="ai-contact-value-{{ ai_gen_id }}">{{ block.settings.store_address | newline_to_br }}</div>
+          </div>
+        {% endif %}
+
+        {% if block.settings.phone_number != blank %}
+          <div class="ai-contact-item-{{ ai_gen_id }}">
+            <div class="ai-contact-label-{{ ai_gen_id }}">Phone</div>
+            <div class="ai-contact-value-{{ ai_gen_id }}">
+              <a href="tel:{{ block.settings.phone_number | replace: ' ', '' | replace: '(', '' | replace: ')', '' | replace: '-', '' }}" class="ai-contact-link-{{ ai_gen_id }}">
+                {{ block.settings.phone_number }}
+              </a>
+            </div>
+          </div>
+        {% endif %}
+
+        {% if block.settings.email_address != blank %}
+          <div class="ai-contact-item-{{ ai_gen_id }}">
+            <div class="ai-contact-label-{{ ai_gen_id }}">Email</div>
+            <div class="ai-contact-value-{{ ai_gen_id }}">
+              <a href="mailto:{{ block.settings.email_address }}" class="ai-contact-link-{{ ai_gen_id }}">
+                {{ block.settings.email_address }}
+              </a>
+            </div>
+          </div>
+        {% endif %}
+
+        {% if block.settings.business_hours != blank %}
+          <div class="ai-contact-item-{{ ai_gen_id }}">
+            <div class="ai-contact-label-{{ ai_gen_id }}">Business hours</div>
+            <div class="ai-contact-value-{{ ai_gen_id }}">{{ block.settings.business_hours | newline_to_br }}</div>
+          </div>
+        {% endif %}
+
+        {% if block.settings.directions_link != blank %}
+          <div class="ai-contact-item-{{ ai_gen_id }}">
+            <a href="{{ block.settings.directions_link }}" class="ai-additional-link-{{ ai_gen_id }}" target="_blank" rel="noopener">
+              <svg class="ai-additional-link-icon-{{ ai_gen_id }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Get directions
+            </a>
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="ai-contact-section-{{ ai_gen_id }}">
+        <h2 class="ai-contact-section-title-{{ ai_gen_id }}">Quick links</h2>
+        <div class="ai-additional-links-{{ ai_gen_id }}">
+          {% if block.settings.returns_link != blank %}
+            <a href="{{ block.settings.returns_link }}" class="ai-additional-link-{{ ai_gen_id }}">
+              <svg class="ai-additional-link-icon-{{ ai_gen_id }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="11 17 6 12 11 7"></polyline>
+                <polyline points="18 17 13 12 18 7"></polyline>
+              </svg>
+              Returns & exchanges
+            </a>
+          {% endif %}
+
+          {% if block.settings.faq_link != blank %}
+            <a href="{{ block.settings.faq_link }}" class="ai-additional-link-{{ ai_gen_id }}">
+              <svg class="ai-additional-link-icon-{{ ai_gen_id }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+              FAQs
+            </a>
+          {% endif %}
+
+          {% if block.settings.custom_link_1_url != blank and block.settings.custom_link_1_text != blank %}
+            <a href="{{ block.settings.custom_link_1_url }}" class="ai-additional-link-{{ ai_gen_id }}">
+              <svg class="ai-additional-link-icon-{{ ai_gen_id }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+              </svg>
+              {{ block.settings.custom_link_1_text }}
+            </a>
+          {% endif %}
+
+          {% if block.settings.custom_link_2_url != blank and block.settings.custom_link_2_text != blank %}
+            <a href="{{ block.settings.custom_link_2_url }}" class="ai-additional-link-{{ ai_gen_id }}">
+              <svg class="ai-additional-link-icon-{{ ai_gen_id }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+              </svg>
+              {{ block.settings.custom_link_2_text }}
+            </a>
+          {% endif %}
+
+          {% if block.settings.custom_link_3_url != blank and block.settings.custom_link_3_text != blank %}
+            <a href="{{ block.settings.custom_link_3_url }}" class="ai-additional-link-{{ ai_gen_id }}">
+              <svg class="ai-additional-link-icon-{{ ai_gen_id }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+              </svg>
+              {{ block.settings.custom_link_3_text }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-contact-form-container-{{ ai_gen_id }}">
+      <h2 class="ai-contact-form-title-{{ ai_gen_id }}">Send us a message</h2>
+      
+      {% if block.settings.gorgias_embed_code != blank %}
+        {{ block.settings.gorgias_embed_code }}
+      {% else %}
+        <div class="ai-gorgias-placeholder-{{ ai_gen_id }}">
+          <svg class="ai-gorgias-placeholder-icon-{{ ai_gen_id }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+          <div class="ai-gorgias-placeholder-text-{{ ai_gen_id }}">Gorgias form will appear here</div>
+          <div class="ai-gorgias-placeholder-subtext-{{ ai_gen_id }}">Add your Gorgias embed code in the block settings to display the contact form</div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Contact us page",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Page content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "page_title",
+      "label": "Page title",
+      "default": "Contact us"
+    },
+    {
+      "type": "richtext",
+      "id": "page_description",
+      "label": "Page description",
+      "default": "<p>We'd love to hear from you. Get in touch with our team for any questions or support.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Contact information"
+    },
+    {
+      "type": "textarea",
+      "id": "store_address",
+      "label": "Store address",
+      "default": "123 Main Street\nYour City, State 12345\nCountry"
+    },
+    {
+      "type": "text",
+      "id": "phone_number",
+      "label": "Phone number",
+      "default": "(555) 123-4567"
+    },
+    {
+      "type": "text",
+      "id": "email_address",
+      "label": "Email address",
+      "default": "hello@yourstore.com"
+    },
+    {
+      "type": "textarea",
+      "id": "business_hours",
+      "label": "Business hours",
+      "default": "Monday - Friday: 9:00 AM - 6:00 PM\nSaturday: 10:00 AM - 4:00 PM\nSunday: Closed"
+    },
+    {
+      "type": "url",
+      "id": "directions_link",
+      "label": "Directions link"
+    },
+    {
+      "type": "header",
+      "content": "Quick links"
+    },
+    {
+      "type": "url",
+      "id": "returns_link",
+      "label": "Returns & exchanges link"
+    },
+    {
+      "type": "url",
+      "id": "faq_link",
+      "label": "FAQ link"
+    },
+    {
+      "type": "text",
+      "id": "custom_link_1_text",
+      "label": "Custom link 1 text"
+    },
+    {
+      "type": "url",
+      "id": "custom_link_1_url",
+      "label": "Custom link 1 URL"
+    },
+    {
+      "type": "text",
+      "id": "custom_link_2_text",
+      "label": "Custom link 2 text"
+    },
+    {
+      "type": "url",
+      "id": "custom_link_2_url",
+      "label": "Custom link 2 URL"
+    },
+    {
+      "type": "text",
+      "id": "custom_link_3_text",
+      "label": "Custom link 3 text"
+    },
+    {
+      "type": "url",
+      "id": "custom_link_3_url",
+      "label": "Custom link 3 URL"
+    },
+    {
+      "type": "header",
+      "content": "Gorgias form"
+    },
+    {
+      "type": "html",
+      "id": "gorgias_embed_code",
+      "label": "Gorgias embed code"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "section_title_color",
+      "label": "Section title color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "label_color",
+      "label": "Label color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Link color",
+      "default": "#0066cc"
+    },
+    {
+      "type": "color",
+      "id": "link_hover_color",
+      "label": "Link hover color",
+      "default": "#004499"
+    },
+    {
+      "type": "color",
+      "id": "info_background_color",
+      "label": "Info section background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "form_background_color",
+      "label": "Form background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#e5e5e5"
+    },
+    {
+      "type": "color",
+      "id": "button_background_color",
+      "label": "Button background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_color",
+      "label": "Button hover color",
+      "default": "#333333"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 24,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Page title size",
+      "default": 42
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Description size",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "section_title_size",
+      "min": 18,
+      "max": 36,
+      "step": 1,
+      "unit": "px",
+      "label": "Section title size",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Text size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "label_size",
+      "min": 12,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "label": "Label size",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Button border radius",
+      "default": 6
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contact us page"
+    }
+  ]
+}
+{% endschema %}

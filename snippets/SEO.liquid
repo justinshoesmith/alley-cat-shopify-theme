@@ -1,0 +1,52 @@
+{%- if settings.use_favicon == true and settings.favicon != blank -%}
+  <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+{%- endif -%}
+
+{%- capture seo_title -%}
+  {%- if request.page_type == 'search' and search.performed == true -%}
+    {{ 'general.search.results_with_count' | t: terms: search.terms, count: search.results_count }}
+  {%- elsif request.page_type == 'password' -%}
+    {{ shop.name }} – {{ 'general.password_page.opening_soon' | t }}
+  {%- elsif template == 'index' -%}
+    Alley Cat Trading | Thoughtful Gifts & Timeless Treasures
+  {%- else -%}
+    {%- if page_title contains 'Alley Cat Trading' -%}
+      {{ page_title }}
+    {%- else -%}
+      {{ page_title }} | Alley Cat Trading
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- if current_tags -%}
+    {%- assign meta_tags = current_tags | join: ', ' -%}
+    – {{ 'general.meta.tags' | t: tags: meta_tags }}
+  {%- endif -%}
+
+  {%- if current_page != 1 -%}
+    – {{ 'general.meta.page' | t: page: current_page }}
+  {%- endif -%}
+{%- endcapture -%}
+
+<title>{{ seo_title | strip }}</title>
+
+{%- assign default_description = '' -%}
+
+{%- if template == 'index' -%}
+  {%- assign default_description = "Discover thoughtful gifts, nostalgic homewares, and timeless treasures at Alley Cat Trading. Curated with heart & home in mind." -%}
+{%- elsif template contains 'product' and product != blank -%}
+  {%- assign default_description = product.title | append: " available now at Alley Cat Trading. Shop our collection of unique and meaningful gifts with a touch of vintage charm." -%}
+{%- elsif template contains 'collection' and collection != blank -%}
+  {%- assign default_description = collection.title | append: " – Explore our range of timeless decor and gifts from Alley Cat Trading. Carefully curated for lovers of nostalgia and elegance." -%}
+{%- elsif template contains 'blog' -%}
+  {%- assign default_description = "Stories, styling ideas, and behind-the-scenes from Alley Cat Trading. Explore our blog for inspiration and timeless charm." -%}
+{%- elsif template contains 'article' and article != blank -%}
+  {%- assign default_description = article.title | append: " – Read more at Alley Cat Trading and discover heartfelt stories, decor inspiration, and timeless treasures." -%}
+{%- else -%}
+  {%- assign default_description = "Alley Cat Trading – your destination for thoughtful gifts, vintage-style homewares, and nostalgic treasures across Australia." -%}
+{%- endif -%}
+
+{%- if page_description -%}
+  <meta name="description" content="{{ page_description | escape }}">
+{%- else -%}
+  <meta name="description" content="{{ default_description | escape }}">
+{%- endif -%}
