@@ -423,6 +423,10 @@ textarea {
 .m-header .m-menu-drawer__wrapper,
 .m-header .m-menu-drawer__content { background: var(--act-ivory); }
 .m-sidebar .m-sidebar--content { background: var(--act-ivory); }
+.m-product-inventory[data-status='low'] .m-product-inventory__text,
+.m-product-inventory[data-status='low'] .m-product-inventory__status { color: var(--act-eucalyptus); }
+.m-product-inventory[data-status='low'] .m-product-inventory__pin::before,
+.m-product-inventory[data-status='low'] .m-product-inventory__pin::after { background: var(--act-eucalyptus); animation: none; }
 .alley-sourcing {
   background: var(--act-ivory);
   border-block: 1px solid var(--act-line);

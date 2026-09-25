@@ -70,9 +70,9 @@
         "inventory_status_w8CjDz": {
           "type": "inventory_status",
           "settings": {
-            "show_indicator_bar": true,
+            "show_indicator_bar": false,
             "normal_text": "",
-            "low_text": "<p>- Hurry! Limited stock left.</p>",
+            "low_text": "",
             "outofstock_text": "",
             "backordered_text": "<p>Backordered</p>"
           }
