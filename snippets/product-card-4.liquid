@@ -280,9 +280,11 @@
                   assign color_scheme_class = color_scheme_class | append: settings.hot_badge_color_scheme
               endcase
             -%}
-            <span class="m-product-card__tag-name m-product-tag m-product-tag--{{ type }} {{ color_scheme_class }}">
-              {{- tag_name -}}
-            </span>
+            {% unless type == 'new' %}
+              <span class="m-product-card__tag-name m-product-tag m-product-tag--{{ type }} {{ color_scheme_class }}">
+                {{- tag_name -}}
+              </span>
+            {% endunless %}
           {% endif %}
         {% endfor %}
       {% endif %}

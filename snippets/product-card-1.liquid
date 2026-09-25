@@ -282,9 +282,11 @@
                   assign color_scheme_class = color_scheme_class | append: settings.hot_badge_color_scheme
               endcase
             -%}
-            <span class="m-product-card__tag-name m-product-tag m-product-tag--{{ type }} {{ color_scheme_class }}">
-              {{- tag_name -}}
-            </span>
+            {% unless type == 'new' %}
+              <span class="m-product-card__tag-name m-product-tag m-product-tag--{{ type }} {{ color_scheme_class }}">
+                {{- tag_name -}}
+              </span>
+            {% endunless %}
           {% endif %}
         {% endfor %}
       {% endif %}
@@ -310,8 +312,6 @@
       {% endif %} {% endcomment %}
       {% if product.metafields.custom.pickup_only.value == true %}
         <span class="m-product-card__tag-name m-product-tag m-product-tag--new m-color-{{ settings.hot_badge_color_scheme }}">Pickup Only</span>
-      {% elsif product.tags contains 'New Arrivals' %}
-        <span class="m-product-card__tag-name m-product-tag m-product-tag--new m-color-{{ settings.new_badge_color_scheme }}">New Arrival</span>
       {% endif %}
       {% if product.metafields.custom.condition == 'Preloved' %}
         <span class="m-product-card__tag-name m-product-tag m-product-tag--new m-color-{{ settings.new_badge_color_scheme }}">Preloved</span>

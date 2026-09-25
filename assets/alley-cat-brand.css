@@ -214,6 +214,43 @@ a:hover {
   border-radius: 0;
 }
 
+/* Information panels are lightly softened; primary actions remain square and editorial. */
+.main-product__block-shipping .m-product-shipping {
+  margin: 0;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.main-product__block-shipping .m-product-shipping--item {
+  align-items: flex-start;
+}
+
+.main-product__block-shipping .m-product-shipping--item + .m-product-shipping--item {
+  border-top: 1px solid var(--act-line);
+  margin-top: 0.875rem;
+  padding-top: 0.875rem;
+}
+
+.main-product__block-shipping .m-product-shipping--content {
+  line-height: 1.5;
+}
+
+.main-product__block-shipping .m-product-shipping--content p {
+  margin: 0;
+}
+
+.m-cart-drawer__inner,
+.m-cart-drawer__header,
+.m-cart-drawer__body,
+.m-cart-drawer__footer {
+  background: #fff;
+}
+
+.m-cart-drawer__footer {
+  border-color: var(--act-line);
+  border-radius: 0;
+}
+
 .m-collapsible--button,
 .m-accordion--item-button {
   border-color: var(--act-line);

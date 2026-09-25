@@ -121,7 +121,7 @@
             "deliver_days": "7",
             "date_format": "%b %d",
             "show_shipping_text": true,
-            "shipping_text": "<p><strong>Flat Rate Shipping: </strong>$9.95 Australia wide, <br/>sent from Warwick, QLD.</p>"
+            "shipping_text": "<p><strong>Flat-rate shipping:</strong> $9.95 Australia-wide. Free shipping on orders over $79.</p>"
           }
         },
         "collapsible_tab_HVk9Dp": {
