@@ -25,12 +25,7 @@ textarea {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6,
 .m-section__heading,
-.m-product-title,
 .m-page-title,
 .m-footer--block-newsletter .m-footer--block-title {
   color: var(--act-eucalyptus);
@@ -57,21 +52,21 @@ a:hover {
 .m-logo__brand {
   align-items: center;
   display: flex;
-  width: 104px;
+  width: var(--logo-width-desktop);
 }
 
-.m-logo__brand svg {
+.m-logo__brand img {
   display: block;
   height: auto;
   width: 100%;
 }
 
-.m-menu,
+.m-header .m-menu__link--main,
 .m-menu-mobile,
 .m-header__options {
   color: var(--act-eucalyptus);
   font-size: 0.8rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.055em;
   text-transform: uppercase;
 }
 
@@ -91,12 +86,14 @@ a:hover {
   color: var(--act-cream);
 }
 
-.m-announcement-bar__content {
+.m-announcement-bar .m-announcement-bar__content {
   font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  min-height: 40px;
-  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  min-height: 34px;
+  padding: 7px 12px;
+  text-transform: none;
 }
 
 .m-button,
@@ -191,7 +188,8 @@ a:hover {
   border-radius: 0;
 }
 
-.main-product__block .m-product-title {
+.main-product__block.main-product__block-title .m-product-title {
+  font-family: var(--font-stack-body);
   font-size: clamp(1.9rem, 3vw, 2.75rem);
   line-height: 1.14;
 }
@@ -321,7 +319,7 @@ textarea {
 .alley-about__inner {
   margin: 0 auto;
   max-width: 760px;
-  padding: clamp(4rem, 8vw, 7rem) 1.25rem;
+  padding: clamp(2.5rem, 4vw, 4rem) 1.25rem;
   text-align: center;
 }
 
@@ -335,25 +333,24 @@ textarea {
   text-transform: uppercase;
 }
 
-.alley-home-intro h2,
-.alley-about h1,
-.alley-about h2 {
-  font-size: clamp(2.5rem, 5vw, 4.6rem);
-  line-height: 0.98;
+.alley-home-intro h1,
+.alley-about h1 {
+  font-size: clamp(2.2rem, 3.5vw, 3.4rem);
+  line-height: 1.12;
   margin: 0;
 }
 
 .alley-home-intro__descriptor,
 .alley-about__lead {
   color: var(--act-eucalyptus);
-  font-family: var(--font-stack-header);
-  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  font-family: var(--font-stack-body);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
   margin: 1.5rem auto 0;
 }
 
 .alley-home-intro__copy,
 .alley-about__copy {
-  font-size: 1.03rem;
+  font-size: 1rem;
   line-height: 1.75;
   margin: 1.25rem auto 0;
   max-width: 640px;
@@ -375,16 +372,66 @@ textarea {
 
 @media screen and (max-width: 767px) {
   .m-logo__brand {
-    width: 76px;
+    width: var(--logo-width-mobile);
   }
 
   .m-announcement-bar__content {
-    font-size: 0.66rem;
-    letter-spacing: 0.05em;
+    font-size: 0.75rem;
+    letter-spacing: 0;
   }
 
   .m-button,
   .shopify-payment-button__button {
     min-height: 44px;
   }
+}
+
+/* Keep UI typography distinct from editorial display headings. */
+.m-product-card h3,
+.m-product-card__name,
+.m-product-title,
+.m-cart-drawer__header h3,
+.m-footer .m-footer--block-title {
+  font-family: var(--font-stack-body);
+  letter-spacing: normal;
+}
+.m-header .m-logo__brand { max-width: 100%; }
+.m-header.stuck .m-logo__brand,
+.m-header.header-sticky-always .m-logo__brand { width: var(--logo-width-sticky); }
+.m-header .m-logo__brand img { height: auto; width: 100%; }
+.m-footer .m-footer--middle,
+.m-footer .m-footer--bottom {
+  background: var(--act-eucalyptus);
+  color: var(--act-cream);
+}
+.m-footer .m-footer--block-title { font-size: 1rem; font-weight: 600; }
+.m-footer a:hover { color: var(--act-cream); text-decoration: underline; }
+.m-footer .m-newsletter-form__input::placeholder { color: var(--act-cream); opacity: .75; }
+.m-footer .m-newsletter-form__button { background: transparent; border: 0; }
+.alley-about__story { text-align: left; line-height: 1.75; }
+.alley-about__story h2 { font-size: clamp(1.6rem, 3vw, 2rem); line-height: 1.25; }
+.alley-home-intro__eyebrow { margin-bottom: .75rem; }
+.alley-home-intro__actions { margin-top: 1.5rem; }
+.alley-sourcing {
+  background: var(--act-ivory);
+  border-block: 1px solid var(--act-line);
+  padding: clamp(2.5rem, 5vw, 5rem) 1.25rem;
+}
+.alley-sourcing__inner { max-width: 1200px; margin: auto; }
+.alley-sourcing__intro { max-width: 650px; }
+.alley-sourcing h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); line-height: 1.2; margin-bottom: 1rem; }
+.alley-sourcing p { line-height: 1.7; }
+.alley-sourcing__principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 2.5rem 0 2rem; }
+.alley-sourcing__principles > div { border-top: 1px solid var(--act-line); padding-top: 1rem; }
+.alley-sourcing h3 { font-family: var(--font-stack-body); font-size: 1rem; font-weight: 600; margin-bottom: .5rem; }
+.alley-sourcing__link { color: var(--act-eucalyptus); text-decoration: underline; font-weight: 600; }
+@media screen and (max-width: 767px) {
+  .alley-sourcing__principles { grid-template-columns: 1fr; gap: 1.25rem; }
+  .m-header .m-logo__brand,
+  .m-header.stuck .m-logo__brand,
+  .m-header.header-sticky-always .m-logo__brand { width: var(--logo-width-mobile); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .m-product-card__media { transition: none; }
+  .m-product-card:hover .m-product-card__media { transform: none; }
 }

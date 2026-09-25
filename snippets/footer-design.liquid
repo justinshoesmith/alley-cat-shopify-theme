@@ -1,4 +1,5 @@
 {% liquid
+  assign copyright_year = 'now' | date: '%Y'
   assign show_follow_on_shop = false
   if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop
     assign show_follow_on_shop = true
@@ -11,7 +12,7 @@
         {% when 'footer-1' %}
           {% if section.settings.copyright != blank %}
             <div class="m-footer--bottom-left m:flex-none m:text-left m:w-full xl:m:text-left">
-              <span class="m-footer__copyright">{{ section.settings.copyright }}</span>
+              <span class="m-footer__copyright">{{ section.settings.copyright | replace: '[year]', copyright_year }}</span>
               {%- if show_follow_on_shop -%}
                 <div class="m-follow-on-shop">
                   {% comment %} TODO: enable theme-check once `login_button` is accepted as valid filter {% endcomment %}
@@ -64,7 +65,7 @@
 
           {% if section.settings.copyright != blank %}
             <div class="m-footer--bottom-center m:flex-1 m:text-left xl:m:text-center xl:m:w-auto m:w-full{% if animated %} m-scroll-trigger animate--{{ animation_effect }}{% endif %}">
-              <span class="m-footer__copyright">{{ section.settings.copyright }}</span>
+              <span class="m-footer__copyright">{{ section.settings.copyright | replace: '[year]', copyright_year }}</span>
               {%- if show_follow_on_shop -%}
                 <div class="m-follow-on-shop">
                   {% comment %} TODO: enable theme-check once `login_button` is accepted as valid filter {% endcomment %}
@@ -145,7 +146,7 @@
           {% endif %}
           {% if section.settings.copyright != blank %}
             <div class="m-footer--bottom-center m:flex-1 xl:m:text-center xl:m:w-auto m:w-full{% if animated %} m-scroll-trigger animate--{{ animation_effect }}{% endif %}">
-              <span class="m-footer__copyright">{{ section.settings.copyright }}</span>
+              <span class="m-footer__copyright">{{ section.settings.copyright | replace: '[year]', copyright_year }}</span>
               {%- if show_follow_on_shop -%}
                 <div class="m-follow-on-shop">
                   {% comment %} TODO: enable theme-check once `login_button` is accepted as valid filter {% endcomment %}

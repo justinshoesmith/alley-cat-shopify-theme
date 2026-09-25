@@ -83,8 +83,8 @@
                     <ul class="m-footer--block-content list-unstyled m-link-lists{{ accordion_content_class }}">
                       {% for link in menu.links %}
                         <li class="m-link-lists--item m:block">
-                          <a href="{{ link.url }}" class="m-link">
-                            {{ link.title }}
+                          <a href="{% if link.url == '/pages/visit-us' %}{{ routes.all_products_collection_url }}{% else %}{{ link.url }}{% endif %}" class="m-link">
+                            {% if link.url == '/pages/visit-us' %}Shop online{% else %}{{ link.title }}{% endif %}
                           </a>
                         </li>
                       {% endfor %}

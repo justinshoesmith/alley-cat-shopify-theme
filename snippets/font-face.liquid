@@ -1,30 +1,36 @@
 {% liquid
-  assign header_font = settings.type_header_font
+  assign header_font = settings.act_heading_font | default: settings.type_header_font
   assign header_font_bolder = header_font | font_modify: 'weight', 'bolder'
   assign header_font_lighter = header_font | font_modify: 'weight', '-100'
-  assign base_font = settings.type_base_font
+  assign base_font = settings.act_body_font | default: settings.type_base_font
   assign base_font_bolder = base_font | font_modify: 'weight', 'bolder'
   assign base_font_bold = base_font | font_modify: 'weight', 'bold'
   assign base_font_italic = base_font | font_modify: 'style', 'italic'
   assign base_font_bold_italic = base_font_bold | font_modify: 'style', 'italic'
   assign use_custom_font_heading = settings.use_custom_font_heading
   assign use_custom_font_body = settings.use_custom_font_body
+  if settings.act_heading_font != blank
+    assign use_custom_font_heading = false
+  endif
+  if settings.act_body_font != blank
+    assign use_custom_font_body = false
+  endif
   assign custom_heading_font = settings.custom_heading_font
   assign custom_body_font = settings.custom_body_font
 %}
 
 {%- if use_custom_font_heading == false or use_custom_font_body == false -%}
-{%- unless settings.type_header_font.system? or settings.type_base_font.system? -%}
+{%- unless header_font.system? or base_font.system? -%}
 <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
 {%- endunless -%}
 {%- endif -%}
 
-{%- unless use_custom_font_body or settings.type_base_font.system? -%}
+{%- unless use_custom_font_body or base_font.system? -%}
   <link rel="preload" as="font" href="{{ base_font | font_url }}" type="font/woff2" crossorigin>
   <link rel="preload" as="font" href="{{ base_font_bold | font_url }}" type="font/woff2" crossorigin>
 {%- endunless -%}
 
-{%- unless use_custom_font_heading or settings.type_header_font.system? -%}
+{%- unless use_custom_font_heading or header_font.system? -%}
   <link rel="preload" as="font" href="{{ header_font | font_url }}" type="font/woff2" crossorigin>
 {%- endunless -%}
 

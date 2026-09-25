@@ -8,6 +8,13 @@
     "theme_support_url": "https://foxecom.com"
   },
   {
+    "name": "Alley Cat brand",
+    "settings": [
+      { "type": "font_picker", "id": "act_heading_font", "label": "Editorial heading font", "default": "bitter_n4" },
+      { "type": "font_picker", "id": "act_body_font", "label": "UI and product font", "default": "inter_n4" }
+    ]
+  },
+  {
     "name": "General settings",
     "settings": [
       {

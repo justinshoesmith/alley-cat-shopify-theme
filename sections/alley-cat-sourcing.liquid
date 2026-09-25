@@ -1,0 +1,28 @@
+<section class="alley-sourcing">
+  <div class="alley-sourcing__inner">
+    <div class="alley-sourcing__intro">
+      <p class="alley-home-intro__eyebrow">Online, from Warwick, Queensland</p>
+      <h2>{{ section.settings.heading | escape }}</h2>
+      <div class="rte">{{ section.settings.copy }}</div>
+    </div>
+    <div class="alley-sourcing__principles">
+      <div><h3>Chosen for character</h3><p>Useful, curious or beautifully made. Pieces worth a closer look.</p></div>
+      <div><h3>Condition described clearly</h3><p>Real product photographs and individual condition notes help you choose.</p></div>
+      <div><h3>A collection that changes</h3><p>Explore the latest arrivals and discover something with a little more history.</p></div>
+    </div>
+    {% if section.settings.link != blank %}
+      <a class="alley-sourcing__link" href="{{ section.settings.link }}">Get to know Alley Cat Trading</a>
+    {% endif %}
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Alley Cat sourcing",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Good finds. A thoughtful second life." },
+    { "type": "richtext", "id": "copy", "label": "Copy", "default": "<p>Discover preloved and vintage pieces with character, usefulness and a story to tell. Shop our changing collection online, Australia-wide.</p>" },
+    { "type": "url", "id": "link", "label": "About page link" }
+  ],
+  "presets": [{ "name": "Alley Cat sourcing" }]
+}
+{% endschema %}

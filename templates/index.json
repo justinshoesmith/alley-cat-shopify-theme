@@ -6,17 +6,17 @@
         "eyebrow": "Alley Cat Trading",
         "heading": "Thoughtful gifts. Timeless finds.",
         "descriptor": "An independent online trading house.",
-        "copy": "<p>Distinctive pre-loved and vintage pieces, thoughtfully selected for character, condition and fair value.</p>",
+        "copy": "<p>Distinctive preloved and vintage pieces, thoughtfully selected for character, condition and fair value.</p>",
         "primary_label": "Shop new arrivals",
         "primary_link": "shopify://collections/new-arrivals",
-        "secondary_label": "Explore pre-loved finds",
+        "secondary_label": "Explore preloved finds",
         "secondary_link": "shopify://collections/new-arrivals-preloved"
       }
     },
     "preloved": {
       "type": "featured-collection",
       "settings": {
-        "heading": "Pre-loved finds",
+        "heading": "Preloved finds",
         "heading_size": "h2",
         "subheading": "Selected for character, condition and story.",
         "description": "Every piece has been carefully chosen for the life it has lived and the life it still has to give.",
@@ -26,7 +26,7 @@
         "collection": "new-arrivals-preloved",
         "enable_flashsale": false,
         "show_countdown": false,
-        "product_to_show": 12,
+        "product_to_show": 8,
         "items_per_row": 4,
         "item_gap": 24,
         "pcard_layout": "",
@@ -38,7 +38,7 @@
         "show_navigation": false,
         "show_button_on_header": false,
         "button_type": "link",
-        "button_text": "Explore pre-loved finds",
+        "button_text": "Explore preloved finds",
         "button_style": "m-button--primary",
         "button_size": "",
         "infinite_load": false,
@@ -53,38 +53,11 @@
       }
     },
     "store_story": {
-      "type": "image-with-text",
+      "type": "alley-cat-sourcing",
       "settings": {
-        "heading": "A shop with heart and history",
-        "heading_size": "h2",
-        "subheading": "From Warwick, Queensland",
-        "container": "container-fluid",
-        "color_scheme": "footer",
-        "item_gap": 70,
-        "item_gap_mobile": 28,
-        "layout": "left",
-        "image_column_size": "6",
-        "image_overlap": false,
-        "show_image_reverse": false,
-        "hover_effect": false,
-        "image_animation": "none",
-        "image": "shopify://shop_images/ACT_-_Shopify_-_Store_Front.jpg",
-        "link": "",
-        "link_2": "",
-        "second_image_offset_top": 10,
-        "title": "",
-        "sub_title": "",
-        "text": "<p>Alley Cat Trading brings together pre-loved and vintage pieces with a sense of usefulness, story and appeal. We are an independent trading house where the collection changes often and every find is worth a closer look.</p>",
-        "text_size": "medium",
-        "content_alignment": "left",
-        "button_label": "More about us",
-        "button_link": "shopify://pages/about-us",
-        "button_style": "m-button--primary",
-        "button_size": "",
-        "padding_top": 70,
-        "padding_bottom": 70,
-        "custom_class": "",
-        "animations": "inherit"
+        "heading": "Good finds. A thoughtful second life.",
+        "copy": "<p>We bring together preloved and vintage pieces with character, usefulness and a story to tell. Browse our changing collection online, wherever you are in Australia.</p>",
+        "link": "shopify://pages/about-us"
       }
     },
     "new_arrivals": {
@@ -127,5 +100,10 @@
       }
     }
   },
-  "order": ["brand_intro", "preloved", "store_story", "new_arrivals"]
+  "order": [
+    "brand_intro",
+    "preloved",
+    "store_story",
+    "new_arrivals"
+  ]
 }
