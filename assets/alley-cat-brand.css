@@ -420,6 +420,9 @@ textarea {
 .m-header .m-hamburger-box__inner,
 .m-header .m-hamburger-box__inner::before,
 .m-header .m-hamburger-box__inner::after { background: currentColor; }
+.m-header__search-icon,
+.m-mobile-sticky-bar--search { background: transparent; border: 0; color: inherit; cursor: pointer; padding: 0; }
+.m-header__search-icon { align-items: center; display: flex; justify-content: center; min-height: 44px; min-width: 44px; }
 .m-header .m-menu-drawer__wrapper,
 .m-header .m-menu-drawer__content { background: var(--act-ivory); }
 .m-sidebar .m-sidebar--content { background: var(--act-ivory); }
