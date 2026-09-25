@@ -19,6 +19,8 @@
   assign collection_desc = collection.description
   if collection.handle == 'all'
     assign collection_desc = section.settings.collection_all_desc
+  elsif collection.handle == 'new-arrivals-preloved'
+    assign collection_desc = '<p>Preloved and vintage pieces chosen for character, condition and story.</p>'
   endif
 
   assign custom_class = ''

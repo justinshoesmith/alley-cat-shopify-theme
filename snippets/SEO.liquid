@@ -8,7 +8,7 @@
   {%- elsif request.page_type == 'password' -%}
     {{ shop.name }} – {{ 'general.password_page.opening_soon' | t }}
   {%- elsif template == 'index' -%}
-    Alley Cat Trading | Thoughtful Gifts & Timeless Treasures
+    Alley Cat Trading | Thoughtful Gifts. Timeless Finds.
   {%- else -%}
     {%- if page_title contains 'Alley Cat Trading' -%}
       {{ page_title }}
@@ -32,17 +32,17 @@
 {%- assign default_description = '' -%}
 
 {%- if template == 'index' -%}
-  {%- assign default_description = "Discover thoughtful gifts, nostalgic homewares, and timeless treasures at Alley Cat Trading. Curated with heart & home in mind." -%}
+  {%- assign default_description = "Explore distinctive preloved and vintage pieces at Alley Cat Trading, an independent online trading house." -%}
 {%- elsif template contains 'product' and product != blank -%}
-  {%- assign default_description = product.title | append: " available now at Alley Cat Trading. Shop our collection of unique and meaningful gifts with a touch of vintage charm." -%}
+  {%- assign default_description = product.title | append: " at Alley Cat Trading. Explore its condition, character and story online." -%}
 {%- elsif template contains 'collection' and collection != blank -%}
-  {%- assign default_description = collection.title | append: " – Explore our range of timeless decor and gifts from Alley Cat Trading. Carefully curated for lovers of nostalgia and elegance." -%}
+  {%- assign default_description = collection.title | append: " – Shop distinctive preloved and vintage finds at Alley Cat Trading." -%}
 {%- elsif template contains 'blog' -%}
-  {%- assign default_description = "Stories, styling ideas, and behind-the-scenes from Alley Cat Trading. Explore our blog for inspiration and timeless charm." -%}
+  {%- assign default_description = "Stories, finds and notes from Alley Cat Trading, an independent online trading house." -%}
 {%- elsif template contains 'article' and article != blank -%}
-  {%- assign default_description = article.title | append: " – Read more at Alley Cat Trading and discover heartfelt stories, decor inspiration, and timeless treasures." -%}
+  {%- assign default_description = article.title | append: " – Read more from Alley Cat Trading." -%}
 {%- else -%}
-  {%- assign default_description = "Alley Cat Trading – your destination for thoughtful gifts, vintage-style homewares, and nostalgic treasures across Australia." -%}
+  {%- assign default_description = "Alley Cat Trading – thoughtful gifts and timeless preloved finds, available online across Australia." -%}
 {%- endif -%}
 
 {%- if page_description -%}

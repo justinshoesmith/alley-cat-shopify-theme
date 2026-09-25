@@ -15,9 +15,9 @@
       {%- if sidebar_title != blank -%}
         <h3 class="m-sidebar--title">{{ sidebar_title }}</h3>
       {%- endif -%}
-      <div class="m-sidebar--close{% if position != 'fixed' %} xl:m:hidden{% endif %}">
+      <button type="button" class="m-sidebar--close{% if position != 'fixed' %} xl:m:hidden{% endif %}" aria-label="Close filters">
         <svg class="m-svg-icon--large" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-      </div>
+      </button>
       <div class="m-filter--wrapper{% if storefront_filters_enabled %} m:flex m:flex-col m-storefront--enabled{% endif %}">
         {%- if st.filters_type == 'storefront_filters' -%}
           {%- for block in section.blocks -%}

@@ -60,9 +60,9 @@
               {%- if section.settings.sidebar_title != blank -%}
                 <h3 class="m-sidebar--title">{{ section.settings.sidebar_title }}</h3>
               {%- endif -%}
-              <div class="m-sidebar--close xl:m:hidden">
+              <button type="button" class="m-sidebar--close xl:m:hidden" aria-label="Close filters">
                 <svg class="m-svg-icon--large" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-              </div>
+              </button>
               <div class="m-filter--wrapper">
                 {% render 'storefront-filters', section: section, results: search %}
               </div>
