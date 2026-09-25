@@ -37,7 +37,7 @@
         assign acc_open_class = 'open'
         assign acc_content_style = 'style="opacity: 1;"'
 
-        if st.collapsed_groups contains filter.label
+        if st.collapsed_groups contains filter.label or filter.label == 'Product type'
           assign acc_open_class = ''
           assign acc_content_style = ''
         endif

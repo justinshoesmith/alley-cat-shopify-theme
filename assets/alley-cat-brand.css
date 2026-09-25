@@ -427,6 +427,20 @@ textarea {
 .m-product-inventory[data-status='low'] .m-product-inventory__status { color: var(--act-eucalyptus); }
 .m-product-inventory[data-status='low'] .m-product-inventory__pin::before,
 .m-product-inventory[data-status='low'] .m-product-inventory__pin::after { background: var(--act-eucalyptus); animation: none; }
+.m-product-card__media .m-product-tag--soldout {
+  top: 12px;
+  right: 12px;
+  left: auto;
+  width: auto;
+  height: auto;
+  padding: 5px 8px;
+  transform: none;
+  border-radius: 0;
+}
+@media screen and (max-width: 767px) {
+  .m-product-card__action .m-compare-button,
+  .m-product-card__action .m-product-quickview-button { display: none; }
+}
 .alley-sourcing {
   background: var(--act-ivory);
   border-block: 1px solid var(--act-line);
