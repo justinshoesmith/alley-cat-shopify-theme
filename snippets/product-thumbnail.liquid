@@ -147,10 +147,10 @@
     >
       {% if thumbnail %}
         <img
-          src="{{ media | image_url: width: 120 }}"
+          src="{{ media | image_url: width: 240 }}"
           loading="lazy"
-          width="110"
-          height="{{ 110 | divided_by: thumb_aspect_ratio | ceil }}"
+          width="140"
+          height="{{ 140 | divided_by: thumb_aspect_ratio | ceil }}"
           alt="{{ media.preview_image.alt }}"
         >
       {% else %}
