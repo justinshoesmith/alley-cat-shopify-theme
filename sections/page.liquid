@@ -6,7 +6,21 @@
   endif
 -%}
 {% render 'page-title', title: page.title, container: 'container' %}
-{%- if page.content != blank -%}
+{%- if page.handle == 'wishlist' -%}
+  <div class="container">
+    <div class="m-page-content m-wishlist-page-content m-mixed-layout m-mixed-layout--mobile-scroll">
+      <div class="m-wishlist-page-content__wrapper m-mixed-layout__inner m:grid m:grid-2-cols md:m:grid-3-cols xl:m:grid-4-cols"></div>
+    </div>
+    <div class="m-page-content m-wishlist-no-products m:hidden">
+      <h3>
+        {{ 'layout.wishlist.no_products' | t }}
+        <a class="m-text-link" href="{{ routes.all_products_collection_url }}">
+          {{ 'layout.back_to_shopping' | t }}
+        </a>
+      </h3>
+    </div>
+  </div>
+{%- elsif page.content != blank -%}
   <div class="container">
     <div class="m-page-content rte{% if animated %} m-scroll-trigger animate--{{ animation_effect }}{% endif %}">
       {{ page.content }}
