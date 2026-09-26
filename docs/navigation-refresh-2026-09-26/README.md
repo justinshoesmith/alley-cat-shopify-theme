@@ -43,3 +43,5 @@ To roll back this draft navigation, point `main_menu` in `sections/header-group.
 | Top-level header hover | Hover inherited `--color-button: 255,255,255` (white) against ivory `#FAF9F5` | Hover and focused-parent text use eucalyptus `#394536`; keyboard focus has a visible outline |
 
 The pickup-only collection `/collections/pickup-only` itself was **not** deleted, unpublished, or altered. This is only a discovery-surface change, not a shipping-policy or product-availability decision.
+
+Shopify rejected the first header CSS revision because section-level custom CSS exceeded its 500-character limit. The revised section CSS is 481 characters; the separate focus-outline rule lives in `assets/alley-cat-brand.css`.

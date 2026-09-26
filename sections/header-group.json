@@ -178,11 +178,10 @@
       ],
       "custom_css": [
         "a[href=\"/collections/sale\"] {color: #992e00;}",
-        ".m-header .m-menu__item > .m-menu__link--main:hover, .m-header .m-menu__item:focus-within > .m-menu__link--main {color: #394536;}",
-        ".m-header .m-menu__link--main:focus-visible {outline: 2px solid #394536; outline-offset: 4px;}",
-        ".m-sub-menu__item > a {color: rgba(var(--color-foreground), 0.9); padding-top: 0.3rem; padding-bottom: 0.3rem;}",
+        ".m-menu__item > a:hover, .m-menu__item:focus-within > a {color: var(--act-eucalyptus);}",
+        ".m-sub-menu__item > a {color: rgba(var(--color-foreground), 0.9); padding-block: 0.3rem;}",
         ".m-menu__item--mega .m-sub-menu__item--level-1 > .m-menu__link {font-weight: 890;}",
-        ".m-menu__item--active {color: rgb(var(--color-button));}",
+        ".m-menu__item--active {color: var(--act-eucalyptus);}",
         ".m-menu__item--mega .m-mega-menu__column {margin-top: 0px;}",
         ".m-menu__item--mega .m-mega-menu__inner {padding-top: 30px;}"
       ],

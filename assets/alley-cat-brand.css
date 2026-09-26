@@ -75,6 +75,11 @@ a:hover {
   height: 1px;
 }
 
+.m-header .m-menu__link--main:focus-visible {
+  outline: 2px solid var(--act-eucalyptus);
+  outline-offset: 4px;
+}
+
 .m-mega-menu,
 .m-menu-drawer__wrapper {
   background-color: var(--act-ivory);
