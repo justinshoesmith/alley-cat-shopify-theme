@@ -331,9 +331,11 @@ textarea {
 }
 
 .m-footer .m-footer--middle .m-footer--block-content,
+.m-footer .m-footer--middle .m-footer--block-content a,
 .m-footer .m-footer--middle .m-footer--block-newsletter-desc,
 .m-footer .m-footer--middle .m-footer--block ul li a,
 .m-footer .m-footer--middle .social-media-links--item,
+.m-footer .m-footer--middle .m-newsletter-form__icon,
 .m-footer .m-footer--middle .m-newsletter-form__button,
 .m-footer .m-footer--middle .m-newsletter-form__input::placeholder {
   color: var(--act-cream);
