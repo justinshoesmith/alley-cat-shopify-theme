@@ -456,6 +456,38 @@ textarea {
   transform: none;
   border-radius: 0;
 }
+
+/* Make unavailable collection items unmistakable without hiding their imagery. */
+.m-collection-products .m-product-card--soldout .m-product-card__link {
+  opacity: 0.58;
+}
+
+.m-collection-products .m-product-card--soldout .m-product-card__media .m-product-tag--soldout {
+  align-items: center;
+  background: rgba(248, 245, 236, 0.97);
+  border-block: 1px solid var(--act-line);
+  color: var(--act-eucalyptus);
+  font-size: 0.85rem;
+  font-weight: 700;
+  justify-content: center;
+  left: 0;
+  letter-spacing: 0.13em;
+  padding: 0.8rem 0.5rem;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 3;
+}
+
+.m-collection-products .m-product-card--soldout:hover .m-product-card__media {
+  transform: none;
+}
+
+.m-collection-products .m-product-card--soldout .m-product-card__atc-button,
+.m-collection-products .m-product-card--soldout .m-product-quickview-button {
+  display: none;
+}
 @media screen and (max-width: 767px) {
   .m-product-card__action .m-compare-button,
   .m-product-card__action .m-product-quickview-button { display: none; }
