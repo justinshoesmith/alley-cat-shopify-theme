@@ -425,6 +425,7 @@ textarea {
 .m-header__search-icon { align-items: center; display: flex; justify-content: center; min-height: 44px; min-width: 44px; }
 .m-header .m-menu-drawer__wrapper,
 .m-header .m-menu-drawer__content { background: var(--act-ivory); }
+.m-search-popup--wrapper { background: var(--act-ivory); color: var(--act-charcoal); }
 .m-sidebar .m-sidebar--content { background: var(--act-ivory); }
 .m-product-inventory[data-status='low'] .m-product-inventory__text,
 .m-product-inventory[data-status='low'] .m-product-inventory__status { color: var(--act-eucalyptus); }
