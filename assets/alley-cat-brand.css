@@ -663,6 +663,9 @@ textarea {
   #MinimogCartFooter .m-cart__footer--wrapper { width: 100%; padding: 0; }
   #MinimogCartFooter .m-cart__subtotal { margin-bottom: .75rem; }
   #MinimogCartFooter .m-cart__shipping-note { margin-top: .5rem; line-height: 1.5; }
+  #cw-bubble-holder .woot-widget-bubble {
+    bottom: calc(var(--mobile-sticky-bar-height, 0px) + 16px);
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   .m-product-card__media { transition: none; }
