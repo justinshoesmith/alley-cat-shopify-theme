@@ -65,8 +65,8 @@ a:hover {
 .m-menu-mobile,
 .m-header__options {
   color: var(--act-eucalyptus);
-  font-size: 0.8rem;
-  letter-spacing: 0.055em;
+  font-size: 14px;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
@@ -102,12 +102,12 @@ a:hover {
 }
 
 .m-announcement-bar .m-announcement-bar__content {
-  font-size: 0.75rem;
+  font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.02em;
-  line-height: 1.5;
-  min-height: 34px;
-  padding: 7px 12px;
+  line-height: 1.4;
+  min-height: 38px;
+  padding: 8px 12px;
   text-transform: none;
 }
 
@@ -330,6 +330,58 @@ textarea {
   color: var(--act-cream);
 }
 
+.m-footer .m-footer--middle .m-footer--block-content,
+.m-footer .m-footer--middle .m-footer--block-newsletter-desc,
+.m-footer .m-footer--middle .m-footer--block ul li a,
+.m-footer .m-footer--middle .social-media-links--item,
+.m-footer .m-footer--middle .m-newsletter-form__button,
+.m-footer .m-footer--middle .m-newsletter-form__input::placeholder {
+  color: var(--act-cream);
+}
+
+.m-footer .m-footer--middle .m-footer--block-content,
+.m-footer .m-footer--middle .m-footer--block ul li a,
+.m-footer .m-footer--middle .m-newsletter-form__input {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.m-footer .m-footer--middle .m-newsletter-form__input::placeholder {
+  opacity: 0.85;
+}
+
+.facest-filters-section .m-collection--empty {
+  color: var(--act-eucalyptus);
+  gap: 0.75rem;
+  padding: clamp(64px, 8vw, 96px) 1.25rem;
+  text-align: center;
+}
+
+.m-collection--empty .m-collection--empty-icon {
+  display: block;
+  height: 88px;
+  width: 96px;
+}
+
+.m-collection--empty .m-collection--empty-text {
+  color: var(--act-charcoal);
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.m-collection--empty .alley-empty-state__link {
+  color: var(--act-eucalyptus);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.m-collection--empty .alley-empty-state__link:hover {
+  color: var(--act-terracotta);
+}
+
 .alley-home-intro,
 .alley-about {
   background: var(--act-cream);
@@ -396,7 +448,7 @@ textarea {
   }
 
   .m-announcement-bar__content {
-    font-size: 0.75rem;
+    font-size: 13px;
     letter-spacing: 0;
   }
 
@@ -424,7 +476,7 @@ textarea {
   background: var(--act-eucalyptus);
   color: var(--act-cream);
 }
-.m-footer .m-footer--block-title { font-size: 1rem; font-weight: 600; }
+.m-footer .m-footer--block-title { font-size: 16px; font-weight: 600; }
 .m-footer a:hover { color: var(--act-cream); text-decoration: underline; }
 .m-footer .m-newsletter-form__input::placeholder { color: var(--act-cream); opacity: .75; }
 .m-footer .m-newsletter-form__button { background: transparent; border: 0; }

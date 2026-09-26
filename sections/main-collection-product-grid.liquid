@@ -72,8 +72,9 @@
         {%- paginate collection.products by section.settings.pagination_limit -%}
           {%- if collection.products.size == 0 -%}
             <div class="m-collection--empty m:flex m:flex-col m:w-full m:items-center">
-              <span>{%- render 'icon', name: 'empty-collection', fill: '#9a9a9a' -%}</span>
+              {%- render 'icon', name: 'empty-collection', size: 'custom', class: 'm-collection--empty-icon' -%}
               <p class="m-collection--empty-text">{{ 'collections.general.no_matches' | t }}</p>
+              <a class="alley-empty-state__link" href="{{ routes.all_products_collection_url }}">{{ 'layout.back_to_shopping' | t }}</a>
             </div>
           {%- else -%}
             <div
