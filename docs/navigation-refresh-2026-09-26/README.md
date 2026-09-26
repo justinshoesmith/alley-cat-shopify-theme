@@ -26,3 +26,10 @@ This is the before/after record for the **unpublished** Alley Cat Trading Minimo
 This changes **only** the new Shopify menu and unpublished draft theme files `sections/header-group.json`, `templates/list-collections.json`, and `sections/collection-list-template.liquid`. No collection was deleted, unpublished, retagged, or given a new inventory rule. Existing collection URLs remain accessible to direct visitors and search engines.
 
 To roll back this draft navigation, point `main_menu` in `sections/header-group.json` back to `new-menu-20251221` and revert the two collections-index files from the pre-change Git commit. The original Shopify menu is still intact. Publishing the draft is a separate merchant decision after QA.
+
+## Preview checks
+
+- Confirmed the GitHub-connected Shopify **Draft** rendered the six top-level links and all seven selected `/collections` cards on desktop and a 390-pixel mobile viewport.
+- Confirmed the mobile navigation drawer opens and exposes the Home & Living subcategories. The desktop mega-menu surface has an opaque soft-ivory background.
+- The JSON templates parse successfully, and the committed diff passes `git diff --check`. The packaged Liquid validator could not start because its `@shopify/theme-check-common` dependency is absent; the Liquid fallback was instead checked in the rendered draft.
+- [Desktop preview](preview-desktop.png) · [Mobile preview](preview-mobile.png)
