@@ -11,7 +11,8 @@
     "name": "Alley Cat brand",
     "settings": [
       { "type": "font_picker", "id": "act_heading_font", "label": "Editorial heading font", "default": "bitter_n4" },
-      { "type": "font_picker", "id": "act_body_font", "label": "UI and product font", "default": "inter_n4" }
+      { "type": "font_picker", "id": "act_body_font", "label": "UI and product font", "default": "inter_n4" },
+      { "type": "checkbox", "id": "act_enable_chatwoot", "label": "Show Chatwoot support widget", "default": true }
     ]
   },
   {

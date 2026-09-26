@@ -9,6 +9,7 @@
  */
 {
   "current": {
+    "act_enable_chatwoot": true,
     "use_brand_favicon": true,
     "favicon": "shopify://shop_images/ACT_-_Favicon_-_48px.png",
     "container_width": 1280,
@@ -121,7 +122,7 @@
       },
       "10864971697205422121": {
         "type": "shopify://apps/gorgias-live-chat-helpdesk/blocks/gorgias/a66db725-7b96-4e3f-916e-6c8e6f87aaaa",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       },
       "8856629154746250496": {
