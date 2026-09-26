@@ -88,6 +88,14 @@ a:hover {
   box-shadow: var(--act-shadow);
 }
 
+.m-header .m-menu__item--dropdown:focus-within > .m-mega-menu,
+.m-header .m-menu__item--dropdown .m-sub-menu__item--level-1:focus-within > .m-mega-menu__column {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
+}
+
 .m-announcement-bar {
   background: var(--act-eucalyptus);
   color: var(--act-cream);
