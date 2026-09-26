@@ -81,6 +81,13 @@ a:hover {
   border-color: var(--act-line);
 }
 
+/* Third-level flyouts sit outside the main dropdown's painted surface. */
+.m-menu__item--dropdown .m-mega-menu__column {
+  background-color: var(--act-ivory);
+  border: 1px solid var(--act-line);
+  box-shadow: var(--act-shadow);
+}
+
 .m-announcement-bar {
   background: var(--act-eucalyptus);
   color: var(--act-cream);
@@ -482,6 +489,10 @@ textarea {
   .m-cart__body .m-cart-item .m-cart-item__info { min-width: 0; flex: 1; }
   .m-cart__body .m-cart-item .m-cart-item__price-discounted,
   .m-cart__body .m-cart-item .m-cart__discount--item { justify-content: flex-start; }
+  #MinimogCartFooter { padding: 1.25rem; }
+  #MinimogCartFooter .m-cart__footer--wrapper { width: 100%; padding: 0; }
+  #MinimogCartFooter .m-cart__subtotal { margin-bottom: .75rem; }
+  #MinimogCartFooter .m-cart__shipping-note { margin-top: .5rem; line-height: 1.5; }
 }
 @media (prefers-reduced-motion: reduce) {
   .m-product-card__media { transition: none; }
