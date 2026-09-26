@@ -82,7 +82,7 @@ a:hover {
 }
 
 /* Third-level flyouts sit outside the main dropdown's painted surface. */
-.m-menu__item--dropdown .m-mega-menu__column {
+.m-header .m-menu__item--dropdown .m-mega-menu__column {
   background-color: var(--act-ivory);
   border: 1px solid var(--act-line);
   box-shadow: var(--act-shadow);
