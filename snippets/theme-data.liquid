@@ -86,7 +86,7 @@ window.MinimogThemeScripts = {
 window.MinimogSettings = {
   design_mode: {{ request.design_mode | json }},
   requestPath: {{ request.path | json }},
-  template: {{ template | json }},
+  template: {% if page.handle == 'wishlist' %}"page.wishlist"{% else %}{{ template | json }}{% endif %},
   templateName: {{ template.name | json }},
   {%- if template.name == "product" -%}
     productHandle: {{ product.handle | json }},
