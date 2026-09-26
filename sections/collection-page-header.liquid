@@ -17,9 +17,11 @@
   endfor
 
   assign collection_desc = collection.description
+  assign collection_heading = collection.title
   if collection.handle == 'all'
     assign collection_desc = section.settings.collection_all_desc
   elsif collection.handle == 'new-arrivals-preloved'
+    assign collection_heading = 'Preloved finds'
     assign collection_desc = '<p>Preloved and vintage pieces chosen for character, condition and story.</p>'
   endif
 
@@ -138,7 +140,7 @@
             %}
           {% endif %}
           <h1 class="m-collection-page-header__title h2 {{ heading_color }}{% if section.settings.upper_title %} m:uppercase{% else %} m:capitalize{% endif %}{% if animated %} m-scroll-trigger animate--{{ animation_effect }}{% endif %}">
-            {{ collection.title }}
+            {{ collection_heading }}
           </h1>
           {% if section.settings.show_desc and collection_desc != blank %}
             <div class="m-collection-page-header__description rte {{ desc_color }}{% if animated %} m-scroll-trigger animate--{{ animation_effect }}{% endif %}">
