@@ -65,6 +65,8 @@
 
             if block.settings.image != blank
               assign featuredImage = block.settings.image
+            elsif featuredImage == blank
+              assign featuredImage = collection.products.first.featured_image
             endif
           %}
           {% render 'collection-card',

@@ -1,0 +1,53 @@
+depth	path	type	url	resource_id	published_products
+1	Shop All	COLLECTION	/collections/most-sold-products	gid://shopify/Collection/261003542625	1575
+1	Home & Living	COLLECTION	/collections/home-living	gid://shopify/Collection/502314008888	266
+2	Home & Living > Kitchen & Table	COLLECTION	/collections/kitchen-table	gid://shopify/Collection/502315057464	303
+3	Home & Living > Kitchen & Table > Barware	COLLECTION	/collections/barware	gid://shopify/Collection/502315155768	74
+3	Home & Living > Kitchen & Table > Serveware	COLLECTION	/collections/serveware	gid://shopify/Collection/502315417912	47
+3	Home & Living > Kitchen & Table > Kitchen Tools & Gadgets	COLLECTION	/collections/kitchen-tools-gadgets	gid://shopify/Collection/502315352376	32
+3	Home & Living > Kitchen & Table > Drinkware	COLLECTION	/collections/drinkware	gid://shopify/Collection/502315286840	25
+2	Home & Living > Vases & Decorative Jugs	COLLECTION	/collections/vases-decorative-jugs	gid://shopify/Collection/502314631480	50
+2	Home & Living > Wall Art & Plaques	COLLECTION	/collections/wall-art-plaques	gid://shopify/Collection/502314664248	33
+2	Home & Living > Figurines & Ornaments	COLLECTION	/collections/figurines-ornaments	gid://shopify/Collection/502314369336	38
+2	Home & Living > Home Fragrance	COLLECTION	/collections/home-fragrance-1	gid://shopify/Collection/502314434872	35
+2	Home & Living > Textiles	COLLECTION	/collections/textiles	gid://shopify/Collection/502315843896	53
+3	Home & Living > Textiles > Apparel & Accessories	COLLECTION	/collections/apparel-accessories	gid://shopify/Collection/502315876664	27
+3	Home & Living > Textiles > Cushions & Cushion Covers	COLLECTION	/collections/cushions-cushion-covers	gid://shopify/Collection/502315909432	20
+2	Home & Living > Hardware & Tools	COLLECTION	/collections/hardware-tools	gid://shopify/Collection/502313582904	79
+3	Home & Living > Hardware & Tools > Door Knobs & Handles	COLLECTION	/collections/door-knobs-handles	gid://shopify/Collection/502313812280	33
+3	Home & Living > Hardware & Tools > Hooks & Hangers	COLLECTION	/collections/hooks-hangers	gid://shopify/Collection/502313877816	31
+2	Home & Living > Garden & Outdoor	COLLECTION	/collections/garden-outdoor	gid://shopify/Collection/502313222456	30
+3	Home & Living > Garden & Outdoor > Pots & Planters	COLLECTION	/collections/pots-planters	gid://shopify/Collection/502312862008	22
+3	Home & Living > Garden & Outdoor > Wind Chimes & Bells	COLLECTION	/collections/wind-chimes-bells	gid://shopify/Collection/502312894776	5
+2	Home & Living > Signs & Words	COLLECTION	/collections/signs-words	gid://shopify/Collection/502314565944	27
+2	Home & Living > Trays & Dishes	COLLECTION	/collections/trays-dishes	gid://shopify/Collection/502314598712	17
+2	Home & Living > Doorstops & Bookends	COLLECTION	/collections/doorstops-bookends	gid://shopify/Collection/502314336568	16
+2	Home & Living > Clocks	COLLECTION	/collections/clocks-1	gid://shopify/Collection/502314172728	11
+1	Gifts	COLLECTION	/collections/gifts-stationery	gid://shopify/Collection/502313255224	224
+2	Gifts > Jewellery	COLLECTION	/collections/jewellery	gid://shopify/Collection/502314697016	176
+3	Gifts > Jewellery > Earrings	COLLECTION	/collections/earrings-1	gid://shopify/Collection/502314926392	65
+3	Gifts > Jewellery > Brooches & Pins	COLLECTION	/collections/brooches-pins	gid://shopify/Collection/502314795320	61
+3	Gifts > Jewellery > Bags & Purses	COLLECTION	/collections/bags-purses	gid://shopify/Collection/502314729784	17
+2	Gifts > Greeting Cards	COLLECTION	/collections/greeting-cards	gid://shopify/Collection/502313320760	68
+2	Gifts > Notebooks & Journals	COLLECTION	/collections/notebooks-journals	gid://shopify/Collection/502313386296	45
+2	Gifts > Toys & Games	COLLECTION	/collections/toys-games-1	gid://shopify/Collection/502313517368	39
+2	Gifts > Office & Desk	COLLECTION	/collections/office-desk	gid://shopify/Collection/502313419064	24
+2	Gifts > Keyrings	COLLECTION	/collections/keyrings	gid://shopify/Collection/502313353528	19
+2	Gifts > Small Gifts & Novelties	COLLECTION	/collections/small-gifts-novelties	gid://shopify/Collection/502313484600	14
+2	Gifts > Hair Accessories	COLLECTION	/collections/hair-accessories-1	gid://shopify/Collection/502314959160	10
+2	Gifts > Wrap & Gift Bags	COLLECTION	/collections/wrap-gift-bags	gid://shopify/Collection/502313550136	6
+1	Collectibles	COLLECTION	/collections/vintage-collectibles	gid://shopify/Collection/502316073272	307
+2	Collectibles > Tools & Hardware	COLLECTION	/collections/vintage-tools-hardware	gid://shopify/Collection/502317252920	47
+2	Collectibles > Smoking & Tobacciana	COLLECTION	/collections/smoking-tobacciana	gid://shopify/Collection/502317089080	26
+2	Collectibles > Optical, Scientific & Measuring Instruments	COLLECTION	/collections/optical-scientific-measuring-instruments	gid://shopify/Collection/502316859704	25
+2	Collectibles > Domestic & Household Objects	COLLECTION	/collections/collectible-domestic-household-objects	gid://shopify/Collection/502316564792	24
+2	Collectibles > Audio & Music	COLLECTION	/collections/audio-music	gid://shopify/Collection/502316138808	22
+2	Collectibles > Travel & Souvenirs	COLLECTION	/collections/travel-souvenir-collectibles	gid://shopify/Collection/502317351224	21
+2	Collectibles > Industrial & Maritime Hardware	COLLECTION	/collections/industrial-maritime-hardware	gid://shopify/Collection/502316597560	14
+2	Collectibles > Badges, Patches & Insignia	COLLECTION	/collections/badges-patches-insignia	gid://shopify/Collection/502316269880	11
+2	Collectibles > Books & Paper Ephemera	COLLECTION	/collections/vintage-books-paper-ephemera	gid://shopify/Collection/502316335416	10
+2	Collectibles > Photography & Cameras	COLLECTION	/collections/photography-cameras	gid://shopify/Collection/502316925240	9
+2	Collectibles > Militaria	COLLECTION	/collections/militaria	gid://shopify/Collection/502316728632	9
+2	Collectibles > Kitchenalia	COLLECTION	/collections/kitchenalia	gid://shopify/Collection/502316630328	10
+1	Pickup Only	COLLECTION	/collections/pickup-only	gid://shopify/Collection/504364400952	131
+1	Sale	COLLECTION	/collections/sale	gid://shopify/Collection/260895506529	50

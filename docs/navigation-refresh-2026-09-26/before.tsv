@@ -1,0 +1,137 @@
+depth	path	type	url	resource_id	published_products
+1	Home & Living	COLLECTION	/collections/home-living	gid://shopify/Collection/502314008888	266
+2	Home & Living > Decor & Styling	HTTP	#	-	-
+3	Home & Living > Decor & Styling > Trays & Dishes	COLLECTION	/collections/trays-dishes	gid://shopify/Collection/502314598712	17
+3	Home & Living > Decor & Styling > Decorative Items	COLLECTION	/collections/decorative-items-1	gid://shopify/Collection/502314271032	8
+3	Home & Living > Decor & Styling > Baskets & Storage	COLLECTION	/collections/baskets-storage	gid://shopify/Collection/502314107192	7
+3	Home & Living > Decor & Styling > Decorative Tins & Boxes	COLLECTION	/collections/decorative-tins-boxes	gid://shopify/Collection/502314041656	6
+3	Home & Living > Decor & Styling > Craft & Sewing Supplies	COLLECTION	/collections/craft-sewing-supplies	gid://shopify/Collection/502314205496	1
+3	Home & Living > Decor & Styling > Photo & Picture Frames	COLLECTION	/collections/photo-picture-frames-1	gid://shopify/Collection/502314533176	5
+3	Home & Living > Decor & Styling > Figurines & Ornaments	COLLECTION	/collections/figurines-ornaments	gid://shopify/Collection/502314369336	38
+3	Home & Living > Decor & Styling > Doorstops & Bookends	COLLECTION	/collections/doorstops-bookends	gid://shopify/Collection/502314336568	16
+3	Home & Living > Decor & Styling > Vases & Decorative Jugs	COLLECTION	/collections/vases-decorative-jugs	gid://shopify/Collection/502314631480	50
+3	Home & Living > Decor & Styling > Wall Art & Plaques	COLLECTION	/collections/wall-art-plaques	gid://shopify/Collection/502314664248	33
+3	Home & Living > Decor & Styling > Signs & Words	COLLECTION	/collections/signs-words	gid://shopify/Collection/502314565944	27
+2	Home & Living > Fixtures & Hardware	HTTP	#	-	-
+3	Home & Living > Fixtures & Hardware > Curtain Hardware	COLLECTION	/collections/curtain-hardware	gid://shopify/Collection/502314238264	0
+3	Home & Living > Fixtures & Hardware > Household Tools & Utilities	COLLECTION	/collections/household-tools-utilities	gid://shopify/Collection/502314467640	0
+3	Home & Living > Fixtures & Hardware > Display & Wall Hardware	COLLECTION	/collections/display-wall-hardware	gid://shopify/Collection/502314303800	0
+3	Home & Living > Fixtures & Hardware > Cleaning & Laundry	COLLECTION	/collections/cleaning-laundry	gid://shopify/Collection/502314139960	4
+3	Home & Living > Fixtures & Hardware > Heating & Cooling	COLLECTION	/collections/heating-cooling	gid://shopify/Collection/502314402104	1
+3	Home & Living > Fixtures & Hardware > Personal Care Appliances	COLLECTION	/collections/personal-care-appliances	gid://shopify/Collection/502314500408	0
+2	Home & Living > Lighting & Atmosphere	HTTP	#	-	-
+3	Home & Living > Lighting & Atmosphere > Lighting	COLLECTION	/collections/lighting	gid://shopify/Collection/502315614520	7
+3	Home & Living > Lighting & Atmosphere > Home Fragrance	COLLECTION	/collections/home-fragrance-1	gid://shopify/Collection/502314434872	35
+3	Home & Living > Lighting & Atmosphere > Clocks	COLLECTION	/collections/clocks-1	gid://shopify/Collection/502314172728	11
+2	Home & Living > Kitchen & Table	COLLECTION	/collections/kitchen-table	gid://shopify/Collection/502315057464	303
+3	Home & Living > Kitchen & Table > Bakeware	COLLECTION	/collections/bakeware	gid://shopify/Collection/502315090232	4
+3	Home & Living > Kitchen & Table > Baking Tools	COLLECTION	/collections/baking-tools	gid://shopify/Collection/502315123000	0
+3	Home & Living > Kitchen & Table > Barware	COLLECTION	/collections/barware	gid://shopify/Collection/502315155768	74
+3	Home & Living > Kitchen & Table > Cookware	COLLECTION	/collections/cookware	gid://shopify/Collection/502315188536	1
+3	Home & Living > Kitchen & Table > Cutlery & Utensils	COLLECTION	/collections/cutlery-utensils	gid://shopify/Collection/502315221304	25
+3	Home & Living > Kitchen & Table > Dinnerware	COLLECTION	/collections/dinnerware	gid://shopify/Collection/502315254072	19
+3	Home & Living > Kitchen & Table > Drinkware	COLLECTION	/collections/drinkware	gid://shopify/Collection/502315286840	25
+3	Home & Living > Kitchen & Table > Kitchen Textiles	COLLECTION	/collections/kitchen-textiles	gid://shopify/Collection/502315319608	8
+3	Home & Living > Kitchen & Table > Kitchen Tools & Gadgets	COLLECTION	/collections/kitchen-tools-gadgets	gid://shopify/Collection/502315352376	32
+3	Home & Living > Kitchen & Table > Kitchen Organisation & Storage	COLLECTION	/collections/kitchen-organisation-storage-1	gid://shopify/Collection/502315385144	5
+3	Home & Living > Kitchen & Table > Serveware	COLLECTION	/collections/serveware	gid://shopify/Collection/502315417912	47
+3	Home & Living > Kitchen & Table > Kitchen Storage & Canisters	COLLECTION	/collections/kitchen-storage-canisters	gid://shopify/Collection/502315450680	18
+3	Home & Living > Kitchen & Table > Table Linens	COLLECTION	/collections/table-linens	gid://shopify/Collection/502315483448	9
+3	Home & Living > Kitchen & Table > Tableware	COLLECTION	/collections/tableware	gid://shopify/Collection/502315516216	7
+3	Home & Living > Kitchen & Table > Teapots & Coffee Pots	COLLECTION	/collections/teapots-coffee-pots	gid://shopify/Collection/502315548984	9
+3	Home & Living > Kitchen & Table > Trays & Platters	COLLECTION	/collections/trays-platters	gid://shopify/Collection/502315581752	20
+2	Home & Living > Textiles	COLLECTION	/collections/textiles	gid://shopify/Collection/502315843896	53
+3	Home & Living > Textiles > Apparel & Accessories	COLLECTION	/collections/apparel-accessories	gid://shopify/Collection/502315876664	27
+3	Home & Living > Textiles > Cushions & Cushion Covers	COLLECTION	/collections/cushions-cushion-covers	gid://shopify/Collection/502315909432	20
+3	Home & Living > Textiles > Rugs & Mats	COLLECTION	/collections/rugs-mats	gid://shopify/Collection/502315942200	1
+3	Home & Living > Textiles > Throws & Blankets	COLLECTION	/collections/throws-blankets	gid://shopify/Collection/502315974968	5
+2	Home & Living > Hardware & Tools	COLLECTION	/collections/hardware-tools	gid://shopify/Collection/502313582904	79
+3	Home & Living > Hardware & Tools > Architectural Hardware	COLLECTION	/collections/architectural-hardware	gid://shopify/Collection/502313648440	0
+3	Home & Living > Hardware & Tools > Brackets & Shelving Hardware	COLLECTION	/collections/brackets-shelving-hardware	gid://shopify/Collection/502313681208	1
+3	Home & Living > Hardware & Tools > Craft & Leatherworking Tools	COLLECTION	/collections/craft-leatherworking-tools	gid://shopify/Collection/502313713976	0
+3	Home & Living > Hardware & Tools > Door Furniture & Numbers	COLLECTION	/collections/door-furniture-numbers	gid://shopify/Collection/502313746744	5
+3	Home & Living > Hardware & Tools > Door Knobs & Handles	COLLECTION	/collections/door-knobs-handles	gid://shopify/Collection/502313812280	33
+3	Home & Living > Hardware & Tools > Hand Tools	COLLECTION	/collections/hardware-tools-hand-tools	gid://shopify/Collection/502313845048	2
+3	Home & Living > Hardware & Tools > Hand Tools	COLLECTION	/collections/hooks-hangers	gid://shopify/Collection/502313877816	31
+3	Home & Living > Hardware & Tools > Keys, Locks & Security Hardware	COLLECTION	/collections/keys-locks-security-hardware	gid://shopify/Collection/502313910584	0
+3	Home & Living > Hardware & Tools > Shoemaking & Leatherworking Tools	COLLECTION	/collections/shoemaking-leatherworking-tools	gid://shopify/Collection/502313943352	0
+3	Home & Living > Hardware & Tools > Workshop Tools	COLLECTION	/collections/workshop-tools	gid://shopify/Collection/502313976120	7
+2	Home & Living > Greenery & Natural	HTTP	#	-	-
+3	Home & Living > Greenery & Natural > Artificial Plants	COLLECTION	/collections/artificial-plants-1	gid://shopify/Collection/502314074424	1
+1	Gifts	COLLECTION	/collections/gifts-stationery	gid://shopify/Collection/502313255224	224
+2	Gifts > Cards & Wrap	HTTP	#	-	-
+3	Gifts > Cards & Wrap > Greeting Cards	COLLECTION	/collections/greeting-cards	gid://shopify/Collection/502313320760	68
+3	Gifts > Cards & Wrap > Wrap & Gift Bags	COLLECTION	/collections/wrap-gift-bags	gid://shopify/Collection/502313550136	6
+2	Gifts > Small Gifts	HTTP	#	-	-
+3	Gifts > Small Gifts > Small Gifts & Novelties	COLLECTION	/collections/small-gifts-novelties	gid://shopify/Collection/502313484600	14
+3	Gifts > Small Gifts > Keyrings	COLLECTION	/collections/keyrings	gid://shopify/Collection/502313353528	19
+3	Gifts > Small Gifts > Toys & Games	COLLECTION	/collections/toys-games-1	gid://shopify/Collection/502313517368	39
+3	Gifts > Small Gifts > Books	COLLECTION	/collections/books	gid://shopify/Collection/502312567096	2
+2	Gifts > Personal & Self Care	HTTP	#	-	-
+3	Gifts > Personal & Self Care > Self Care & Pamper	COLLECTION	/collections/self-care-pamper	gid://shopify/Collection/502313451832	4
+2	Gifts > Office & Desk	HTTP	#	-	-
+3	Gifts > Office & Desk > Notebooks & Journals	COLLECTION	/collections/notebooks-journals	gid://shopify/Collection/502313386296	45
+3	Gifts > Office & Desk > Office & Desk	COLLECTION	/collections/office-desk	gid://shopify/Collection/502313419064	24
+2	Gifts > Kids & Baby	HTTP	#	-	-
+3	Gifts > Kids & Baby > Baby Gifts	COLLECTION	/collections/baby-gifts	gid://shopify/Collection/502313287992	5
+2	Gifts > Jewellery	COLLECTION	/collections/jewellery	gid://shopify/Collection/502314697016	176
+3	Gifts > Jewellery > Bags & Purses	COLLECTION	/collections/bags-purses	gid://shopify/Collection/502314729784	17
+3	Gifts > Jewellery > Brooches & Pins	COLLECTION	/collections/brooches-pins	gid://shopify/Collection/502314795320	61
+3	Gifts > Jewellery > Earrings	COLLECTION	/collections/earrings-1	gid://shopify/Collection/502314926392	65
+3	Gifts > Jewellery > Hair Accessories	COLLECTION	/collections/hair-accessories-1	gid://shopify/Collection/502314959160	10
+3	Gifts > Jewellery > Necklaces	COLLECTION	/collections/necklaces	gid://shopify/Collection/502314991928	6
+3	Gifts > Jewellery > Other Jewellery	COLLECTION	/collections/other-jewellery	gid://shopify/Collection/502315024696	17
+1	Collectibles	COLLECTION	/collections/vintage-collectibles	gid://shopify/Collection/502316073272	307
+2	Collectibles > Everyday Life & Home	HTTP	#	-	-
+3	Collectibles > Everyday Life & Home > Domestic & Household Objects	COLLECTION	/collections/collectible-domestic-household-objects	gid://shopify/Collection/502316564792	24
+3	Collectibles > Everyday Life & Home > Kitchenalia	COLLECTION	/collections/kitchenalia	gid://shopify/Collection/502316630328	10
+3	Collectibles > Everyday Life & Home > Barware & Drinking Vessels	COLLECTION	/collections/vintage-barware-drinking-vessels	gid://shopify/Collection/502316302648	9
+3	Collectibles > Everyday Life & Home > Lighting & Lamps	COLLECTION	/collections/collectible-lighting-lamps	gid://shopify/Collection/502316663096	2
+3	Collectibles > Everyday Life & Home > Storage & Trunks	COLLECTION	/collections/collectible-storage-trunks	gid://shopify/Collection/502317154616	2
+3	Collectibles > Everyday Life & Home > Sewing & Needlecraft Ephemera	COLLECTION	/collections/sewing-needlecraft-ephemera	gid://shopify/Collection/502317056312	1
+3	Collectibles > Everyday Life & Home > Textile & Clothing Ephemera	COLLECTION	/collections/textile-clothing-ephemera	gid://shopify/Collection/502317187384	1
+2	Collectibles > Tools, Trade & Industry	HTTP	#	-	-
+3	Collectibles > Tools, Trade & Industry > Tools & Hardware	COLLECTION	/collections/vintage-tools-hardware	gid://shopify/Collection/502317252920	47
+3	Collectibles > Tools, Trade & Industry > Agricultural & Farm Tools	COLLECTION	/collections/agricultural-farm-tools	gid://shopify/Collection/502316106040	5
+3	Collectibles > Tools, Trade & Industry > Industrial & Maritime Hardware	COLLECTION	/collections/industrial-maritime-hardware	gid://shopify/Collection/502316597560	14
+3	Collectibles > Tools, Trade & Industry > Medical Instruments	COLLECTION	/collections/medical-instruments	gid://shopify/Collection/502316695864	3
+3	Collectibles > Tools, Trade & Industry > Optical, Scientific & Measuring Instruments	COLLECTION	/collections/optical-scientific-measuring-instruments	gid://shopify/Collection/502316859704	25
+3	Collectibles > Tools, Trade & Industry > Navigational Instruments	COLLECTION	/collections/navigational-instruments	gid://shopify/Collection/502316794168	0
+2	Collectibles > Personal & Wearable	HTTP	#	-	-
+3	Collectibles > Personal & Wearable > Badges, Patches & Insignia	COLLECTION	/collections/badges-patches-insignia	gid://shopify/Collection/502316269880	11
+3	Collectibles > Personal & Wearable > Timepieces	COLLECTION	/collections/collectible-timepieces	gid://shopify/Collection/502317220152	0
+3	Collectibles > Personal & Wearable > Grooming & Vanity Ephemera	COLLECTION	/collections/grooming-vanity-ephemera	gid://shopify/Collection/502316532024	8
+2	Collectibles > Paper, Media & Writing	HTTP	#	-	-
+3	Collectibles > Paper, Media & Writing > Books & Paper Ephemera	COLLECTION	/collections/vintage-books-paper-ephemera	gid://shopify/Collection/502316335416	10
+3	Collectibles > Paper, Media & Writing > Writing & Desk Accessories	COLLECTION	/collections/collectible-writing-desk-accessories	gid://shopify/Collection/502317416760	1
+3	Collectibles > Paper, Media & Writing > Photography & Cameras	COLLECTION	/collections/photography-cameras	gid://shopify/Collection/502316925240	9
+3	Collectibles > Paper, Media & Writing > Audio & Music	COLLECTION	/collections/audio-music	gid://shopify/Collection/502316138808	22
+2	Collectibles > Hobbies, Leisure & Play	HTTP	#	-	-
+3	Collectibles > Hobbies, Leisure & Play > Toys & Games	COLLECTION	/collections/collectible-toys-games	gid://shopify/Collection/502317285688	7
+3	Collectibles > Hobbies, Leisure & Play > Garden & Outdoor Objects	COLLECTION	/collections/collectible-garden-outdoor-objects	gid://shopify/Collection/502316499256	5
+3	Collectibles > Hobbies, Leisure & Play > Gaming	COLLECTION	/collections/collectible-gaming	gid://shopify/Collection/502316433720	2
+3	Collectibles > Hobbies, Leisure & Play > Sports & Leisure Memorabilia	COLLECTION	/collections/sports-leisure-memorabilia	gid://shopify/Collection/502317121848	2
+3	Collectibles > Hobbies, Leisure & Play > Camping & Outdoor Gear	COLLECTION	/collections/camping-outdoor-gear	gid://shopify/Collection/502316368184	2
+2	Collectibles > Transport & Travel	HTTP	#	-	-
+3	Collectibles > Transport & Travel > Transport & Railway Memorabilia	COLLECTION	/collections/transport-railway-memorabilia	gid://shopify/Collection/502317318456	1
+3	Collectibles > Transport & Travel > Automotive Memorabilia	COLLECTION	/collections/automotive-memorabilia	gid://shopify/Collection/502316237112	8
+3	Collectibles > Transport & Travel > Travel & Souvenirs	COLLECTION	/collections/travel-souvenir-collectibles	gid://shopify/Collection/502317351224	21
+2	Collectibles > Spiritual, Cultural & Curiosity	HTTP	#	-	-
+3	Collectibles > Spiritual, Cultural & Curiosity > Uranium Glass	COLLECTION	/collections/uranium-glass	gid://shopify/Collection/502707421496	0
+3	Collectibles > Spiritual, Cultural & Curiosity > Militaria	COLLECTION	/collections/militaria	gid://shopify/Collection/502316728632	9
+3	Collectibles > Spiritual, Cultural & Curiosity > Smoking & Tobacciana	COLLECTION	/collections/smoking-tobacciana	gid://shopify/Collection/502317089080	26
+3	Collectibles > Spiritual, Cultural & Curiosity > Religious & Ecclesiastical Art	COLLECTION	/collections/religious-ecclesiastical-art	gid://shopify/Collection/502316990776	6
+3	Collectibles > Spiritual, Cultural & Curiosity > Tribal & Ethnographic Art	COLLECTION	/collections/tribal-ethnographic-art	gid://shopify/Collection/502317383992	0
+3	Collectibles > Spiritual, Cultural & Curiosity > Flags & Banners	COLLECTION	/collections/flags-banners	gid://shopify/Collection/502316400952	1
+3	Collectibles > Spiritual, Cultural & Curiosity > Natural Curiosities	COLLECTION	/collections/natural-curiosities	gid://shopify/Collection/502316761400	1
+1	Garden	COLLECTION	/collections/garden-outdoor	gid://shopify/Collection/502313222456	30
+2	Garden > Bird Baths	COLLECTION	/collections/bird-baths	gid://shopify/Collection/502312763704	0
+2	Garden > Garden Ornaments	COLLECTION	/collections/garden-ornaments	gid://shopify/Collection/502312796472	3
+2	Garden > Outdoor Hardware	COLLECTION	/collections/outdoor-hardware	gid://shopify/Collection/502312829240	0
+2	Garden > Pots & Planters	COLLECTION	/collections/pots-planters	gid://shopify/Collection/502312862008	22
+2	Garden > Wind Chimes & Bells	COLLECTION	/collections/wind-chimes-bells	gid://shopify/Collection/502312894776	5
+1	Pets	COLLECTION	/collections/pets-1	gid://shopify/Collection/502315647288	0
+2	Pets > Pet Bowls & Treat Jars	COLLECTION	/collections/pet-bowls-treat-jars	gid://shopify/Collection/502315680056	0
+2	Pets > Pet Apparel & Accessories	COLLECTION	/collections/pet-apparel-accessories	gid://shopify/Collection/502315778360	0
+1	Pickup Only	COLLECTION	/collections/pickup-only	gid://shopify/Collection/504364400952	131
+1	Sale	COLLECTION	/collections/sale	gid://shopify/Collection/260895506529	50
