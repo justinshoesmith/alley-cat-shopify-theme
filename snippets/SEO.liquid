@@ -1,5 +1,10 @@
-{%- if settings.use_favicon == true and settings.favicon != blank -%}
-  <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+{%- if settings.use_favicon == true -%}
+  {%- if settings.use_brand_favicon == true or settings.favicon == blank -%}
+    <link rel="icon" type="image/png" sizes="128x128" href="{{ 'alley-cat-favicon.png' | asset_url }}">
+    <link rel="icon" type="image/svg+xml" sizes="any" href="{{ 'alley-cat-favicon.svg' | asset_url }}">
+  {%- else -%}
+    <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+  {%- endif -%}
 {%- endif -%}
 
 {%- capture seo_title -%}

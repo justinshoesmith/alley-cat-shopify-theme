@@ -9,6 +9,7 @@
  */
 {
   "current": {
+    "use_brand_favicon": true,
     "favicon": "shopify://shop_images/ACT_-_Favicon_-_48px.png",
     "container_width": 1280,
     "container_fluid_width": 1620,
