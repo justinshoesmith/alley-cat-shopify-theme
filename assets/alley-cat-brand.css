@@ -264,6 +264,11 @@ a:hover {
   border-radius: 0;
 }
 
+.m-cart-drawer foxkit-cart-goal,
+#MinimogCart foxkit-cart-goal {
+  display: none !important;
+}
+
 .m-collapsible--button,
 .m-accordion--item-button {
   border-color: var(--act-line);
