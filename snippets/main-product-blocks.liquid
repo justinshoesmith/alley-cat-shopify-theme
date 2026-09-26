@@ -59,6 +59,9 @@
         {% render 'breadcrumb', container: 'container', justify: alignBreadcrumb, hide_current: true %}
       {%- when 'title' -%}
         <div class="product-block-group product-block-group--title">
+          {% if product.metafields.custom.condition == 'Preloved' %}
+            <span class="alley-product-condition" aria-label="Condition: Preloved">Preloved</span>
+          {% endif %}
           {% if is_featured == true %}
             <h2 class="m-product-title">{{ product.title }}</h2>
           {% else %}

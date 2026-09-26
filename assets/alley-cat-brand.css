@@ -357,6 +357,30 @@ textarea {
   opacity: 0.85;
 }
 
+/* Rich-text defaults must not turn the help copy dark on the green footer. */
+.m-footer .m-footer--middle .m-footer--block-content p,
+.m-footer .m-footer--middle .m-footer--block-content h4,
+.m-footer .m-footer--middle .m-footer--block-content a {
+  color: var(--act-cream);
+}
+
+.m-footer .m-footer--middle a:hover,
+.m-footer .m-footer--middle a:focus-visible,
+.m-footer .m-footer--bottom a:hover,
+.m-footer .m-footer--bottom a:focus-visible {
+  color: var(--act-ivory);
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+}
+
+/* Use one steady underline, not Minimog's travelling two-line effect. */
+.m-footer .m-footer--middle a::before,
+.m-footer .m-footer--middle a::after,
+.m-footer .m-footer--bottom a::before,
+.m-footer .m-footer--bottom a::after {
+  content: none;
+}
+
 .facest-filters-section .m-collection--empty {
   color: var(--act-eucalyptus);
   gap: 0.75rem;
@@ -443,6 +467,26 @@ textarea {
   margin-top: 2rem;
 }
 
+.alley-home-intro {
+  background: var(--act-ivory);
+  border-bottom: 1px solid var(--act-line);
+}
+
+.alley-home-intro__inner {
+  padding-top: clamp(2.75rem, 4vw, 3.5rem);
+  padding-bottom: 1.5rem;
+}
+
+.alley-home-intro__actions .m-button {
+  align-items: center;
+  display: inline-flex;
+  font-size: 14px;
+  justify-content: center;
+  line-height: 1.3;
+  min-height: 50px;
+  padding: 13px 24px;
+}
+
 .alley-about__story {
   border-top: 1px solid var(--act-line);
   margin-top: 3rem;
@@ -491,7 +535,6 @@ textarea {
 .alley-about__story h2 { font-size: clamp(1.6rem, 3vw, 2rem); line-height: 1.25; }
 .alley-home-intro__eyebrow { margin-bottom: .75rem; }
 .alley-home-intro__actions { margin-top: 1.5rem; }
-.alley-home-intro__inner { padding-block: 2rem; }
 .alley-home-intro__descriptor { margin-top: 1rem; }
 .alley-home-intro__copy { margin-top: .75rem; max-width: 610px; }
 .m-header .m-hamburger-box { min-width: 44px; height: 44px; background: transparent; color: var(--act-eucalyptus); }
@@ -569,6 +612,22 @@ textarea {
 .alley-sourcing__principles > div { border-top: 1px solid var(--act-line); padding-top: 1rem; }
 .alley-sourcing h3 { font-family: var(--font-stack-body); font-size: 1rem; font-weight: 600; margin-bottom: .5rem; }
 .alley-sourcing__link { color: var(--act-eucalyptus); text-decoration: underline; font-weight: 600; }
+.template-product .m-breadcrumb {
+  padding-top: clamp(1rem, 2vw, 1.5rem);
+  padding-bottom: .75rem;
+}
+.alley-product-condition {
+  border: 1px solid var(--act-line);
+  color: var(--act-eucalyptus);
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  line-height: 1.2;
+  margin-bottom: .75rem;
+  padding: .45rem .65rem;
+  text-transform: uppercase;
+}
 @media screen and (max-width: 767px) {
   .alley-sourcing__principles { grid-template-columns: 1fr; gap: 1.25rem; }
   .m-header .m-logo__brand,
