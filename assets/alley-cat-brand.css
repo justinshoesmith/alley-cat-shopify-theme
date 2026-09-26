@@ -212,11 +212,11 @@ a:hover {
   border-radius: 0;
 }
 
-/* Information panels are lightly softened; primary actions remain square and editorial. */
+/* Keep shipping details aligned with the square editorial action system. */
 .main-product__block-shipping .m-product-shipping {
   margin: 0;
   padding: 1rem;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 .main-product__block-shipping .m-product-shipping--item {
