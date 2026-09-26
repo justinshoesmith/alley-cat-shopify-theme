@@ -373,6 +373,13 @@ textarea {
   text-decoration-color: currentColor;
 }
 
+/* Override Minimog's darker menu-item hover colour on the green footer. */
+.m-footer .m-footer--middle .m-footer--block ul li:hover > a,
+.m-footer .m-footer--middle .m-footer--block ul li > a:hover,
+.m-footer .m-footer--middle .m-footer--block ul li > a:focus-visible {
+  color: var(--act-ivory);
+}
+
 /* Use one steady underline, not Minimog's travelling two-line effect. */
 .m-footer .m-footer--middle a::before,
 .m-footer .m-footer--middle a::after,
