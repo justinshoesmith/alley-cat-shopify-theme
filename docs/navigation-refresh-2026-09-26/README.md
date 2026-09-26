@@ -45,3 +45,8 @@ To roll back this draft navigation, point `main_menu` in `sections/header-group.
 The pickup-only collection `/collections/pickup-only` itself was **not** deleted, unpublished, or altered. This is only a discovery-surface change, not a shipping-policy or product-availability decision.
 
 Shopify rejected the first header CSS revision because section-level custom CSS exceeded its 500-character limit. The revised section CSS is 481 characters; the separate focus-outline rule lives in `assets/alley-cat-brand.css`.
+
+Verified in the synced unpublished draft: five top-level menu links, six collections-index cards, hovered Home & Living text computed as `rgb(57, 69, 54)` against `rgb(250, 249, 245)`, opaque ivory dropdown, and a visible eucalyptus keyboard-focus outline. The direct `/collections/pickup-only` URL still opens with its products and pickup badges.
+
+- [Updated header hover/focus preview](preview-no-pickup-hover.png)
+- [Updated collections-index preview](preview-no-pickup-index.png)
