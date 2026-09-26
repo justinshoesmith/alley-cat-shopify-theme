@@ -449,7 +449,7 @@ textarea {
     width: var(--logo-width-mobile);
   }
 
-  .m-announcement-bar__content {
+  .m-announcement-bar .m-announcement-bar__content {
     font-size: 13px;
     letter-spacing: 0;
   }
