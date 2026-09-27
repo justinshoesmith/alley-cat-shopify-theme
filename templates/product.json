@@ -146,7 +146,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Shipping",
-            "content": "<p>$9.95 flat-rate shipping Australia-wide.</p><p>Free shipping on orders over $79.</p><p>Sometimes products may arrive separately, but you will only be charged one delivery fee per order.</p><p><a href=\"https://alley-cat-trading.gorgias.help/en-US/articles/shipping-and-tracking-212290\" target=\"_blank\" title=\"Shipping and tracking\">Read more</a></p>",
+            "content": "<p>$9.95 flat-rate shipping Australia-wide.</p><p>Free shipping on orders over $79.</p><p>Sometimes products may arrive separately, but you will only be charged one delivery fee per order.</p><p><a href=\"https://support.alleycattrading.com.au/hc/help/articles/1790426153-how-much-does-shipping-cost\" target=\"_blank\" rel=\"noopener\" title=\"How much does shipping cost?\">Read shipping help</a></p>",
             "liquid": "",
             "default_open": false
           }
@@ -155,7 +155,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Returns",
-            "content": "<p><a href=\"/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\">Read more</a></p>",
+            "content": "<p><a href=\"https://support.alleycattrading.com.au/hc/help/en/categories/returns-refunds\" target=\"_blank\" rel=\"noopener\">Read returns help</a></p><p><a href=\"/policies/refund-policy\" target=\"_blank\" rel=\"noopener\">Read refund policy</a></p>",
             "liquid": "",
             "default_open": false
           }

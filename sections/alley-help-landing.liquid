@@ -1,0 +1,36 @@
+{{ 'alley-cat-help-landing.css' | asset_url | stylesheet_tag }}
+
+<section class="alley-help-landing" aria-labelledby="alley-help-title">
+  <div class="container">
+    <div class="alley-help-landing__content">
+      <p class="alley-help-landing__eyebrow">Alley Cat Trading support</p>
+      <h1 id="alley-help-title">{{ section.settings.heading | escape }}</h1>
+      {% if section.settings.description != blank %}
+        <div class="alley-help-landing__description rte">{{ section.settings.description }}</div>
+      {% endif %}
+      <div class="alley-help-landing__actions">
+        {% if section.settings.primary_url != blank and section.settings.primary_label != blank %}
+          <a class="m-button m-button--primary" href="{{ section.settings.primary_url }}">{{ section.settings.primary_label | escape }}</a>
+        {% endif %}
+        {% if section.settings.secondary_url != blank and section.settings.secondary_label != blank %}
+          <a class="alley-help-landing__secondary" href="{{ section.settings.secondary_url }}">{{ section.settings.secondary_label | escape }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Help Centre link",
+  "settings": [
+    {"type": "text", "id": "heading", "label": "Heading", "default": "How can we help?"},
+    {"type": "richtext", "id": "description", "label": "Description", "default": "<p>Find answers in our Help Centre.</p>"},
+    {"type": "url", "id": "primary_url", "label": "Primary link"},
+    {"type": "text", "id": "primary_label", "label": "Primary link label", "default": "Open Help Centre"},
+    {"type": "url", "id": "secondary_url", "label": "Secondary link"},
+    {"type": "text", "id": "secondary_label", "label": "Secondary link label"}
+  ],
+  "presets": [{"name": "Help Centre link"}]
+}
+{% endschema %}

@@ -1,0 +1,62 @@
+.alley-help-landing {
+  padding: clamp(64px, 8vw, 120px) 0;
+  background: var(--act-cream);
+  color: var(--act-charcoal);
+}
+
+.alley-help-landing__content {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.alley-help-landing__eyebrow {
+  margin-bottom: 12px;
+  color: var(--act-terracotta);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.alley-help-landing h1 {
+  margin-bottom: 20px;
+  color: var(--act-eucalyptus);
+  font-size: clamp(36px, 4.5vw, 60px);
+  line-height: 1.15;
+}
+
+.alley-help-landing__description {
+  font-size: clamp(16px, 1.6vw, 19px);
+  line-height: 1.6;
+}
+
+.alley-help-landing__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.alley-help-landing__actions .m-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+}
+
+.alley-help-landing__secondary {
+  color: var(--act-eucalyptus);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .18em;
+}
+
+.alley-help-landing__secondary:hover,
+.alley-help-landing__secondary:focus-visible { color: var(--act-terracotta); }
+
+.alley-help-landing__secondary::before,
+.alley-help-landing__secondary::after { content: none !important; }

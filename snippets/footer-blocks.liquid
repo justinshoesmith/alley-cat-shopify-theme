@@ -89,9 +89,23 @@
                             {% assign hide_footer_link = true %}
                           {% endif %}
                         {% endif %}
+                        {% assign footer_link_url = link.url %}
+                        {% if link.url == '/pages/visit-us' %}
+                          {% assign footer_link_url = routes.all_products_collection_url %}
+                        {% endif %}
+                        {% if block.settings.menu == 'footer' %}
+                          {% case footer_link_title %}
+                            {% when 'faqs' %}
+                              {% assign footer_link_url = 'https://support.alleycattrading.com.au/hc/help/en' %}
+                            {% when 'shipping' %}
+                              {% assign footer_link_url = 'https://support.alleycattrading.com.au/hc/help/en/categories/shipping-tracking' %}
+                            {% when 'returns & refunds' %}
+                              {% assign footer_link_url = 'https://support.alleycattrading.com.au/hc/help/en/categories/returns-refunds' %}
+                          {% endcase %}
+                        {% endif %}
                         {% unless hide_footer_link %}
                         <li class="m-link-lists--item m:block">
-                          <a href="{% if link.url == '/pages/visit-us' %}{{ routes.all_products_collection_url }}{% else %}{{ link.url }}{% endif %}" class="m-link">
+                          <a href="{{ footer_link_url }}" class="m-link">
                             {% if link.url == '/pages/visit-us' %}Shop online{% else %}{{ link.title }}{% endif %}
                           </a>
                         </li>
