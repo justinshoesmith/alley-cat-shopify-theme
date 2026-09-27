@@ -42,6 +42,27 @@ a:hover {
   color: var(--act-terracotta);
 }
 
+.rte a:not(.m-button):not(.spr-summary-actions-newreview),
+.m-section__description a:not(.m-button),
+.m-link-underline,
+.m-button--link {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  text-decoration-skip-ink: auto;
+}
+
+.rte a:not(.m-button):not(.spr-summary-actions-newreview)::before,
+.rte a:not(.m-button):not(.spr-summary-actions-newreview)::after,
+.m-section__description a:not(.m-button)::before,
+.m-section__description a:not(.m-button)::after,
+.m-link-underline::before,
+.m-link-underline::after,
+.m-button--link::before,
+.m-button--link::after {
+  content: none !important;
+}
+
 .m-header header,
 .m-header.stuck header {
   background: var(--act-ivory);
