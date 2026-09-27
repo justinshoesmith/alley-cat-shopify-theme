@@ -102,7 +102,7 @@
           "type": "custom_liquid",
           "name": "Pickup Only",
           "settings": {
-            "custom_liquid": "{% if product.metafields.custom.pickup_only.value == true %}\n  <div\n    role=\"note\"\n    style=\"\n      display: flex;\n      align-items: flex-start;\n      gap: 10px;\n      margin: 14px 0;\n      padding: 12px 14px;\n      background: #ead9ca;\n      border-left: 4px solid #b75b38;\n      border-radius: 0;\n      font-size: 0.95em;\n      line-height: 1.4;\n    \"\n  >\n    <span style=\"font-size: 1.1em; line-height: 1;\">📍</span>\n    <div>\n      <strong style=\"display: block; margin-bottom: 2px;\">\n        Pickup only\n      </strong>\n      This item is available for pickup in Warwick only and is not eligible for shipping.\n    </div>\n  </div>\n{% endif %}"
+            "custom_liquid": "{% if product.metafields.custom.pickup_only.value == true %}\n  <div\n    role=\"note\"\n    style=\"\n      display: flex;\n      align-items: flex-start;\n      gap: 10px;\n      margin: 14px 0;\n      padding: 12px 14px;\n      background: #ead9ca;\n      border-left: 4px solid #b75b38;\n      border-radius: 0;\n      font-size: 0.95em;\n      line-height: 1.4;\n    \"\n  >\n    <span style=\"font-size: 1.1em; line-height: 1;\">📍</span>\n    <div>\n      <strong style=\"display: block; margin-bottom: 2px;\">\n        Pickup only\n      </strong>\n      This item is available for pickup in Warwick, Queensland only and is not eligible for shipping.\n    </div>\n  </div>\n{% endif %}"
           }
         },
         "buy_buttons": {
