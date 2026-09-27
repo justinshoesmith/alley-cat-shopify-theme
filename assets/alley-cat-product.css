@@ -10,6 +10,14 @@
   padding: 16px;
 }
 
+.main-product__block-shipping .m-product-shipping--text .m-product-shipping--content {
+  display: block;
+}
+
+.main-product__block-shipping .m-product-shipping--text .m-product-shipping--content p + p {
+  margin-top: 0.5rem;
+}
+
 .main-product__block .m-product-trust-badge {
   padding: 20px;
 }
