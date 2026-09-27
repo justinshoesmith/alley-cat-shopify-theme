@@ -102,7 +102,7 @@
           "type": "custom_liquid",
           "name": "Pickup Only",
           "settings": {
-            "custom_liquid": "{% if product.metafields.custom.pickup_only.value == true %}\n  <div\n    role=\"note\"\n    style=\"\n      display: flex;\n      align-items: flex-start;\n      gap: 10px;\n      margin: 14px 0;\n      padding: 12px 14px;\n      background: #faf9f5;\n      border-left: 4px solid #b75b38;\n      border-radius: 0;\n      font-size: 0.95em;\n      line-height: 1.4;\n    \"\n  >\n    <span style=\"font-size: 1.1em; line-height: 1;\">📍</span>\n    <div>\n      <strong style=\"display: block; margin-bottom: 2px;\">\n        Pickup only\n      </strong>\n      This item is available for pickup in Warwick only and is not eligible for shipping.\n    </div>\n  </div>\n{% endif %}"
+            "custom_liquid": "{% if product.metafields.custom.pickup_only.value == true %}\n  <div\n    role=\"note\"\n    style=\"\n      display: flex;\n      align-items: flex-start;\n      gap: 10px;\n      margin: 14px 0;\n      padding: 12px 14px;\n      background: #ead9ca;\n      border-left: 4px solid #b75b38;\n      border-radius: 0;\n      font-size: 0.95em;\n      line-height: 1.4;\n    \"\n  >\n    <span style=\"font-size: 1.1em; line-height: 1;\">📍</span>\n    <div>\n      <strong style=\"display: block; margin-bottom: 2px;\">\n        Pickup only\n      </strong>\n      This item is available for pickup in Warwick only and is not eligible for shipping.\n    </div>\n  </div>\n{% endif %}"
           }
         },
         "buy_buttons": {
@@ -130,7 +130,7 @@
             "deliver_days": "7",
             "date_format": "%b %d",
             "show_shipping_text": true,
-            "shipping_text": "<p><strong>Flat-rate shipping:</strong> $9.95 Australia-wide. Free shipping on orders over $79.</p>"
+            "shipping_text": "<p><strong>Flat-rate shipping:</strong> $9.95 Australia-wide. Free shipping on orders over $79.</p><p><strong>Dispatched from Warwick, Queensland.</strong></p>"
           }
         },
         "collapsible_tab_HVk9Dp": {
@@ -146,7 +146,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Shipping",
-            "content": "<p>$9.95 flat-rate shipping Australia-wide.</p><p>Free shipping on orders over $79.</p><p>Sometimes products may arrive separately, but you will only be charged one delivery fee per order.</p><p><a href=\"https://support.alleycattrading.com.au/hc/help/articles/1790426153-how-much-does-shipping-cost\" target=\"_blank\" rel=\"noopener\" title=\"How much does shipping cost?\">Read shipping help</a></p>",
+            "content": "<p>Orders are dispatched from Warwick, Queensland.</p><p>$9.95 flat-rate shipping Australia-wide. Free shipping on orders over $79.</p><p>Sometimes products may arrive separately, but you will only be charged one delivery fee per order.</p><p><a href=\"https://support.alleycattrading.com.au/hc/help/articles/1790426153-how-much-does-shipping-cost\" target=\"_blank\" rel=\"noopener\" title=\"How much does shipping cost?\">Read shipping help</a></p>",
             "liquid": "",
             "default_open": false
           }

@@ -311,7 +311,7 @@
         <span class="m-product-card__tag-name m-product-tag m-product-tag--sale m-color-scheme-f2d06bb9-d250-4e44-b384-dbf42ee6ccc4">40% OFF</span>
       {% endif %} {% endcomment %}
       {% if product.metafields.custom.pickup_only.value == true %}
-        <span class="m-product-card__tag-name m-product-tag m-product-tag--new m-color-{{ settings.hot_badge_color_scheme }}">Pickup Only</span>
+        <span class="m-product-card__tag-name m-product-tag m-product-tag--new alley-pickup-tag">Pickup Only</span>
       {% endif %}
       {% if product.metafields.custom.condition == 'Preloved' and product.available %}
         <span class="m-product-card__tag-name m-product-tag m-product-tag--new m-color-{{ settings.new_badge_color_scheme }}">Preloved</span>

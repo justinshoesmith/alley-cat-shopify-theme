@@ -678,6 +678,14 @@ textarea {
   border-radius: 0;
 }
 
+.m-product-card__tag-name.alley-pickup-tag {
+  background: #ead9ca;
+  color: var(--act-charcoal);
+  border-radius: 0;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
 /* Make unavailable collection items unmistakable without hiding their imagery. */
 .m-collection-products .m-product-card--soldout .m-product-card__link {
   opacity: 0.58;

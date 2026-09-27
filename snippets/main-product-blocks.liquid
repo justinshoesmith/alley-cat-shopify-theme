@@ -10,6 +10,7 @@
 
   assign image_field = section.blocks | where: 'type', 'image_field'
   assign wishlist_app = settings.wishlist_app
+  assign is_pickup_only = product.metafields.custom.pickup_only.value
 
   if section.settings.layout == 'layout-7'
     assign alignBreadcrumb = 'center'
@@ -34,6 +35,14 @@
 <input type="hidden" name="id" value="{{ variant_id }}" data-selected-variant="{{ selected_variant_id }}" disabled>
 {% comment %} End comment {% endcomment %}
 {%- for block in section.blocks -%}
+  {% if is_pickup_only %}
+    {% if block.type == 'shipping' %}
+      {% continue %}
+    {% endif %}
+    {% if block.type == 'collapsible_tab' and block.settings.heading == 'Shipping' %}
+      {% continue %}
+    {% endif %}
+  {% endif %}
   <div
     class="main-product__block main-product__block-{{ block.type }}"
     {{ block.shopify_attributes }}

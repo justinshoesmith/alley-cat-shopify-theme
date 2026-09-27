@@ -58,7 +58,7 @@
           "type": "our_store",
           "settings": {
             "title": "Have a question?",
-            "description": "<p>We're always here to lend a helping hand.</p><p>Online Customer Care Team hours are Monday-Friday, 10am - 2pm AEST</p><h4><a href=\"/pages/contact-us\" title=\"Contact us\">Contact us</a></h4>",
+            "description": "<p>Based in Warwick, Queensland 4370. Shipping Australia-wide.</p><p>We're always here to lend a helping hand.</p><p>Online Customer Care Team hours are Monday-Friday, 10am - 2pm AEST</p><h4><a href=\"/pages/contact-us\" title=\"Contact us\">Contact us</a></h4>",
             "show_email": false,
             "show_phone": false,
             "show_socials_link": true,
