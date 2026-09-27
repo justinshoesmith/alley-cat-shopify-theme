@@ -12,5 +12,5 @@
 
 - Replace the product Shipping “Read more” URL (currently the existing Gorgias shipping article) with the final Chatwoot shipping article URL, then verify redirect/SEO strategy for the old URL.
 - Replace the contact-page FAQs quick link and any footer FAQs/Shipping links with final Chatwoot Help Centre pages when deployed.
-- Route Shopify contact-form notifications to the approved Chatwoot email inbox using Shopify's contact-email/forwarding configuration, or replace the native form with an approved Chatwoot form integration. Liquid's built-in contact form does not select a per-form recipient. Confirm destination and test a real submission before launch.
+- Route Shopify contact-form notifications to the approved Chatwoot email inbox. Shopify sends native contact-form submissions to the store's **Sender email** (Settings → Notifications), so changing that address would affect more than this form. Prefer mailbox forwarding or an approved Chatwoot form integration if the current Sender email should remain unchanged. Confirm destination and test a real submission before launch.
 - Recheck footer Discover menu if the underlying Shopify menu is later renamed; the two-link filter is scoped to `footer-menu-about-company`.
