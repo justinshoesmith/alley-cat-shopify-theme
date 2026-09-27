@@ -82,11 +82,20 @@
                   {% if menu.links != blank %}
                     <ul class="m-footer--block-content list-unstyled m-link-lists{{ accordion_content_class }}">
                       {% for link in menu.links %}
+                        {% assign footer_link_title = link.title | downcase | strip %}
+                        {% assign hide_footer_link = false %}
+                        {% if block.settings.menu == 'footer-menu-about-company' %}
+                          {% if footer_link_title == 'careers' or footer_link_title == 'home & style journal' %}
+                            {% assign hide_footer_link = true %}
+                          {% endif %}
+                        {% endif %}
+                        {% unless hide_footer_link %}
                         <li class="m-link-lists--item m:block">
                           <a href="{% if link.url == '/pages/visit-us' %}{{ routes.all_products_collection_url }}{% else %}{{ link.url }}{% endif %}" class="m-link">
                             {% if link.url == '/pages/visit-us' %}Shop online{% else %}{{ link.title }}{% endif %}
                           </a>
                         </li>
+                        {% endunless %}
                       {% endfor %}
                     </ul>
                   {% endif %}

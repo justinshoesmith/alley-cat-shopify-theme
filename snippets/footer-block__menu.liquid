@@ -3,20 +3,11 @@
     <ul class="{% if block.settings.title != blank or block_title != blank %}m-accordion--item-content{% endif %} sf__footer-block-content">
         <div class="pb-5 md:pb-0">
             {% for link in menu.links %}
-              {% assign footer_link_title = link.title | downcase | strip %}
-              {% assign hide_footer_link = false %}
-              {% if block.settings.menu == 'footer-menu-about-company' %}
-                {% if footer_link_title == 'careers' or footer_link_title == 'home & style journal' %}
-                  {% assign hide_footer_link = true %}
-                {% endif %}
-              {% endif %}
-              {% unless hide_footer_link %}
                 <li class="link-lv2 leading-8 hover-underline">
                     <a href="{{ link.url }}">
                         {{ link.title }}
                     </a>
                 </li>
-              {% endunless %}
             {% endfor %}
         </div>
     </ul>
