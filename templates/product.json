@@ -165,6 +165,7 @@
           "settings": {
             "trust_badges_text": "<p>Guaranteed safe and secure checkout</p>",
             "trust_badges_image": "shopify://shop_images/trust-badges-gray.png",
+            "trust_badges_years": "7",
             "trust_badges_image_width": "350px",
             "position": "below"
           }

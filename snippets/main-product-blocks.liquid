@@ -531,7 +531,18 @@
           {% assign position = block.settings.position %}
           <div class="m-product-trust-badge m:text-center m-product-trust-badge--{{ position | default: 'below' }}">
             <div style="width: {{ block.settings.trust_badges_image_width }};">
-              {% render 'responsive-image', image: block.settings.trust_badges_image %}
+              {% if block.settings.trust_badges_years != blank %}
+                <svg viewBox="0 0 500 139" width="500" height="139" role="img" aria-label="{{ block.settings.trust_badges_years | escape }} years in business" style="display: block; width: 100%; height: auto;">
+                  <mask id="alley-trust-years-{{ block.id }}" maskContentUnits="userSpaceOnUse">
+                    <rect width="500" height="139" fill="white" />
+                    <rect x="416" y="42" width="37" height="43" fill="black" />
+                  </mask>
+                  <image href="{{ block.settings.trust_badges_image | image_url: width: 500 }}" width="500" height="139" mask="url(#alley-trust-years-{{ block.id }})" />
+                  <text x="434" y="82" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="47" font-weight="800" fill="#999999">{{ block.settings.trust_badges_years | escape }}</text>
+                </svg>
+              {% else %}
+                {% render 'responsive-image', image: block.settings.trust_badges_image %}
+              {% endif %}
             </div>
             {% if block.settings.trust_badges_text != blank %}
               <div class="m-product-trust-badge__content m:text-base rte">{{ block.settings.trust_badges_text }}</div>
