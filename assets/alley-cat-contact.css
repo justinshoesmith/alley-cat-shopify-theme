@@ -58,7 +58,6 @@
 .alley-contact__links { padding: 0; margin: 0; list-style: none; }
 .alley-contact__links li + li { margin-top: 12px; }
 
-.alley-contact__item a,
 .alley-contact__links a {
   color: var(--act-eucalyptus);
   text-decoration: underline;
@@ -66,13 +65,9 @@
   text-underline-offset: .18em;
 }
 
-.alley-contact__item a:hover,
 .alley-contact__links a:hover,
-.alley-contact__item a:focus-visible,
 .alley-contact__links a:focus-visible { color: var(--act-terracotta); }
 
-.alley-contact__item a::before,
-.alley-contact__item a::after,
 .alley-contact__links a::before,
 .alley-contact__links a::after { content: none !important; }
 

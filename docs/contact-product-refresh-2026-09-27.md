@@ -6,7 +6,7 @@
 | Product accordions | Opening Shipping or Returns also closed Details, moving the page | Panels operate independently; height transition and reduced-motion handling refined |
 | Product Read more links | Minimog animated underline through text | Conventional underline with visible hover/focus colour |
 | Discover footer menu | Careers and Home & Style Journal shown | Hidden by draft-theme rendering; Shopify menu records retained, so live theme unchanged |
-| Contact page | AI-generated Gorgias form, closed retail address/hours/directions, defunct returns app URL | Native Shopify contact form, PO Box 595, online care hours, refund policy and current FAQs |
+| Contact page | AI-generated Gorgias form, closed retail address/hours/directions, phone number, defunct returns app URL | Native Shopify contact form, PO Box 595, online care hours, no phone number, refund policy and current FAQs |
 
 ## Chatwoot launch follow-ups
 
