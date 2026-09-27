@@ -223,6 +223,41 @@ a:hover {
   text-transform: uppercase;
 }
 
+.main-product__block .m-product-wishlist .m-wishlist-button.m-tooltip,
+.m-product-media--mobile__atwl-button.m-wishlist-button.m-tooltip,
+.m-sticky-addtocart--addon .m-wishlist-button.m-tooltip {
+  align-items: center;
+  background: var(--act-ivory);
+  border: 1px solid var(--act-line);
+  border-radius: 50%;
+  color: var(--act-charcoal);
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 48px;
+}
+
+.main-product__block .m-product-wishlist .m-wishlist-button.added-to-wishlist,
+.m-product-media--mobile__atwl-button.m-wishlist-button.added-to-wishlist,
+.m-sticky-addtocart--addon .m-wishlist-button.added-to-wishlist {
+  background: var(--act-terracotta);
+  border-color: var(--act-terracotta);
+  color: var(--act-ivory);
+}
+
+.main-product__block .m-product-wishlist .m-wishlist-button:hover,
+.main-product__block .m-product-wishlist .m-wishlist-button:focus-visible,
+.m-product-media--mobile__atwl-button.m-wishlist-button:hover,
+.m-product-media--mobile__atwl-button.m-wishlist-button:focus-visible,
+.m-sticky-addtocart--addon .m-wishlist-button:hover,
+.m-sticky-addtocart--addon .m-wishlist-button:focus-visible {
+  background: var(--act-terracotta);
+  border-color: var(--act-terracotta);
+  color: var(--act-ivory);
+}
+
 .m-product-shipping,
 .main-product__block .m-product-trust-badge,
 .m-cart__footer,

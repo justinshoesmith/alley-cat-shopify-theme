@@ -141,7 +141,7 @@
               {% render 'tooltip', type: 'compare', class_name: 'm-tooltip--top' %}
             {% endif %}
             {% if st.sticky_atc_wishtlist %}
-              {% render 'tooltip', type: 'wishlist', class_name: 'm-tooltip--top' %}
+              {% render 'tooltip', type: 'wishlist', product: product, class_name: 'm-tooltip--top', style: 2 %}
             {% endif %}
           </div>
         {% endif %}

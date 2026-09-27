@@ -81,7 +81,7 @@
                   {% render 'mm-ssw-widget-faveicon' with product.id %}
                 {% endunless %}
               {% else %}
-                {% render 'tooltip', type: 'wishlist', product: product, class_name: 'm-tooltip--left', style: style %}
+                {% render 'tooltip', type: 'wishlist', product: product, class_name: 'm-tooltip--left', style: 2 %}
               {% endif %}
             </div>
           {% endif %}
@@ -392,7 +392,7 @@
                 </button>
                 {% if section.settings.show_atwl and section.settings.layout == 'layout-7' %}
                   <div class="m-product-wishlist m:hidden md:m:block">
-                    {% render 'tooltip', type: 'wishlist', class_name: 'm-tooltip--top' %}
+                    {% render 'tooltip', type: 'wishlist', product: product, class_name: 'm-tooltip--top', style: 2 %}
                   </div>
                 {% endif %}
               {% endif %}

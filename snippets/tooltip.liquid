@@ -189,6 +189,7 @@
     type="button"
     data-product-handle="{{ product.handle }}"
     aria-label="{{ content }}"
+    {%- if type == 'wishlist' %} aria-pressed="false"{% endif %}
   >
     {%- if type == 'quickview' -%}
       <span class="m-spinner-icon">

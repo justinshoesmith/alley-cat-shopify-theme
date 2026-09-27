@@ -29,3 +29,18 @@ if (MinimogSettings.template === "page.wishlist") {
     reconcile();
   }
 }
+
+const syncWishlistButtonAccessibility = () => {
+  document.querySelectorAll("button.m-wishlist-button").forEach((button) => {
+    button.setAttribute("aria-pressed", String(button.classList.contains("added-to-wishlist")));
+    const action = button.querySelector(".m-wishlist-button-text")?.textContent?.trim();
+    if (action) button.setAttribute("aria-label", action);
+  });
+};
+
+syncWishlistButtonAccessibility();
+document.addEventListener("click", (event) => {
+  if (event.target instanceof Element && event.target.closest("button.m-wishlist-button")) {
+    queueMicrotask(syncWishlistButtonAccessibility);
+  }
+});
