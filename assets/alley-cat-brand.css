@@ -124,7 +124,7 @@ a:hover {
   border-radius: 0;
   box-shadow: none;
   color: var(--act-cream);
-  font-size: 0.75rem;
+  font-size: var(--font-btn-size, 14px);
   font-weight: 700;
   letter-spacing: 0.1em;
   min-height: 46px;
@@ -267,6 +267,49 @@ a:hover {
 .m-cart-drawer__footer {
   border-color: var(--act-line);
   border-radius: 0;
+}
+
+m-cart-remove-button .m-cart-item__remove {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: var(--act-eucalyptus);
+  cursor: pointer;
+  display: inline-block;
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+m-cart-remove-button .m-cart-item__remove:hover {
+  color: var(--act-terracotta);
+}
+
+m-cart-remove-button .m-cart-item__remove::before,
+m-cart-remove-button .m-cart-item__remove::after,
+#MinimogCartDrawer .m-cart-drawer__link-to-cart::before,
+#MinimogCartDrawer .m-cart-drawer__link-to-cart::after {
+  content: none;
+}
+
+#MinimogCartDrawer button[name="checkout"] {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 52px;
+}
+
+#MinimogCartDrawer .m-cart-drawer__link-to-cart {
+  display: inline-block;
+  min-height: 0;
+  padding: 0;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
 }
 
 .m-cart-drawer foxkit-cart-goal,
@@ -481,17 +524,17 @@ textarea {
 
 .alley-home-intro__inner {
   padding-top: clamp(2.75rem, 4vw, 3.5rem);
-  padding-bottom: 1.5rem;
+  padding-bottom: clamp(3rem, 5vw, 4rem);
 }
 
-.alley-home-intro__actions .m-button {
+.alley-home-intro__actions .m-button,
+.m-featured-collection__button .m-button {
   align-items: center;
   display: inline-flex;
-  font-size: 14px;
   justify-content: center;
   line-height: 1.3;
-  min-height: 50px;
-  padding: 13px 24px;
+  min-height: 52px;
+  padding: 0 24px;
 }
 
 .alley-about__story {

@@ -126,9 +126,9 @@
           id="MinimogCart-Remove-{{ item.index | plus: 1 }}"
           data-index="{{ item.index | plus: 1 }}"
         >
-          <span class="m-cart-item__remove m-button--link{% unless gift_wrap_id == nil or item.id != gift_wrap_id %} m:hidden{% endunless %}">
+          <button type="button" class="m-cart-item__remove{% unless gift_wrap_id == nil or item.id != gift_wrap_id %} m:hidden{% endunless %}" aria-label="{{ 'cart.general.remove' | t | escape }}: {{ item.product.title | escape }}">
             {{ 'cart.general.remove' | t }}
-          </span>
+          </button>
         </m-cart-remove-button>
       </div>
     </div>
