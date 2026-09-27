@@ -81,11 +81,16 @@
 .alley-contact__field textarea {
   width: 100%;
   padding: 12px 14px;
-  background: #fff;
   border: 1px solid var(--act-line);
   border-radius: 0;
   color: var(--act-charcoal);
   line-height: 1.5;
+}
+
+.alley-contact__form .alley-contact__field input[type='text'],
+.alley-contact__form .alley-contact__field input[type='email'],
+.alley-contact__form .alley-contact__field textarea {
+  background: #fff;
 }
 
 .alley-contact__field textarea { resize: vertical; }
