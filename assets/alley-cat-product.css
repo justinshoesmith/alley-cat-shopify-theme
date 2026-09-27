@@ -1,0 +1,48 @@
+/* Product-only finishing layer, loaded after Minimog's product stylesheet. */
+.main-product__block-shipping .m-product-shipping,
+.main-product__block .m-product-trust-badge {
+  background: var(--act-ivory);
+  border: 1px solid var(--act-line);
+  border-radius: 0;
+}
+
+.main-product__block-shipping .m-product-shipping {
+  padding: 16px;
+}
+
+.main-product__block .m-product-trust-badge {
+  padding: 20px;
+}
+
+.m-product-collapsible .m-collapsible--content {
+  transition: height 300ms ease-in-out;
+}
+
+.m-product-collapsible .m-collapsible--content__inner {
+  padding-bottom: 12px;
+}
+
+.m-product-collapsible .rte a {
+  color: var(--act-eucalyptus);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  transition: color 160ms ease;
+}
+
+.m-product-collapsible .rte a:hover,
+.m-product-collapsible .rte a:focus-visible {
+  color: var(--act-terracotta);
+}
+
+.m-product-collapsible .rte a::before,
+.m-product-collapsible .rte a::after {
+  content: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .m-product-collapsible .m-collapsible--content,
+  .m-product-collapsible .rte a {
+    transition-duration: 0.01ms;
+  }
+}
