@@ -4,10 +4,11 @@ The written policies below were edited in Shopify Admin. Unlike theme changes, t
 
 | Surface | Before | After |
 | --- | --- | --- |
-| Refund policy introduction | Mentioned in-store and online returns; used two em dashes | Describes online purchases only, with no em dashes; retains the Australian Consumer Law statement |
+| Refund policy introduction | Mentioned in-store and online returns; used two em dashes | Describes online purchases and eligible change-of-mind requests only, with no em dashes; retains the Australian Consumer Law statement |
 | Change of Mind | Separate in-store and online purchase sections | Removed the in-store section and redundant online subheading; retained the online 14-day terms |
 | How to Return Something | Directed customers to the retired Return Prime portal, then offered the contact form as an alternative | Contact form is the sole route, followed by the existing approval and posting instructions |
 | Processing Times | Included an in-store exchanges sentence | Removed that sentence |
+| Fault-notification wording | Referred to receiving an “order or purchase” | Refers to receiving an order, consistent with the online-only scope |
 | Shipping policy | Linked to the old Shopify FAQs page | Links directly to the Chatwoot Shipping & Tracking category |
 | Refund policy horizontal rules | Browser/theme-default rules | Draft theme styles policy dividers with the brand's subtle `--act-line` token and consistent spacing |
 
