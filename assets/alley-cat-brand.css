@@ -63,6 +63,14 @@ a:hover {
   content: none !important;
 }
 
+.shopify-policy__body hr {
+  height: 0;
+  margin: clamp(24px, 4vw, 40px) 0;
+  border: 0;
+  border-top: 1px solid var(--act-line);
+  background: none;
+}
+
 .m-header header,
 .m-header.stuck header {
   background: var(--act-ivory);
