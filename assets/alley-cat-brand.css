@@ -774,7 +774,7 @@ textarea {
     align-items: center;
     display: inline-flex;
     justify-content: center;
-    transform: translateY(4px);
+    transform: translateY(10px);
   }
   .alley-sourcing__principles { grid-template-columns: 1fr; gap: 1.25rem; }
   .m-header .m-logo__brand,
