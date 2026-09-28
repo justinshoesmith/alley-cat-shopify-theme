@@ -751,6 +751,31 @@ textarea {
   text-transform: uppercase;
 }
 @media screen and (max-width: 767px) {
+  .m-collection-toolbar .m-sidebar--open {
+    align-items: center;
+    display: inline-flex;
+    min-height: 44px;
+    padding: 10px 12px 10px 16px;
+  }
+  .m-collection-products .m-product-card__tags .m-product-tag,
+  .m-collection-products .m-product-card__media .m-product-tag,
+  .m-collection-products .m-product-card__media .m-product-card__badge {
+    border-radius: 0 !important;
+  }
+  .m-header__mobile .m-cart-icon-bubble {
+    align-items: center;
+    display: inline-flex;
+    height: 44px;
+    justify-content: center;
+    padding: 0;
+    width: 44px;
+  }
+  .m-header__mobile .m-cart-icon-bubble > .m-tooltip {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    transform: translateY(2px);
+  }
   .alley-sourcing__principles { grid-template-columns: 1fr; gap: 1.25rem; }
   .m-header .m-logo__brand,
   .m-header.stuck .m-logo__brand,
