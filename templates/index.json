@@ -7,10 +7,10 @@
         "heading": "Thoughtful gifts. Timeless finds.",
         "descriptor": "An independent online trading house.",
         "copy": "<p>Distinctive preloved and vintage pieces, thoughtfully selected for character, condition and fair value.</p>",
-        "primary_label": "Shop new arrivals",
-        "primary_link": "shopify://collections/new-arrivals",
-        "secondary_label": "Explore preloved finds",
-        "secondary_link": "shopify://collections/new-arrivals-preloved"
+        "primary_label": "Shop all finds",
+        "primary_link": "shopify://collections/all",
+        "secondary_label": "Browse by collection",
+        "secondary_link": "/collections"
       }
     },
     "preloved": {
