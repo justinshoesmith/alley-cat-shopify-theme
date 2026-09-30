@@ -219,7 +219,7 @@ a:hover {
 .m-product-tag,
 .m-product-card__badge {
   background: var(--act-eucalyptus);
-  border-radius: 0;
+  border-radius: 0 !important;
   color: var(--act-cream);
   font-size: 0.68rem;
   letter-spacing: 0.08em;
@@ -756,11 +756,6 @@ textarea {
     display: inline-flex;
     min-height: 44px;
     padding: 10px 12px 10px 16px;
-  }
-  .m-collection-products .m-product-card__tags .m-product-tag,
-  .m-collection-products .m-product-card__media .m-product-tag,
-  .m-collection-products .m-product-card__media .m-product-card__badge {
-    border-radius: 0 !important;
   }
   .m-header__mobile .m-cart-icon-bubble {
     align-items: center;
