@@ -687,11 +687,13 @@ textarea {
 }
 
 /* Make unavailable collection items unmistakable without hiding their imagery. */
-.m-collection-products .m-product-card--soldout .m-product-card__link {
+.m-collection-products .m-product-card--soldout .m-product-card__link,
+.m-recently-viewed .m-product-card--soldout .m-product-card__link {
   opacity: 0.58;
 }
 
-.m-collection-products .m-product-card--soldout .m-product-card__media .m-product-tag--soldout {
+.m-collection-products .m-product-card--soldout .m-product-card__media .m-product-tag--soldout,
+.m-recently-viewed .m-product-card--soldout .m-product-card__media .m-product-tag--soldout {
   align-items: center;
   background: rgba(248, 245, 236, 0.97);
   border-block: 1px solid var(--act-line);
@@ -709,7 +711,8 @@ textarea {
   z-index: 3;
 }
 
-.m-collection-products .m-product-card--soldout:hover .m-product-card__media {
+.m-collection-products .m-product-card--soldout:hover .m-product-card__media,
+.m-recently-viewed .m-product-card--soldout:hover .m-product-card__media {
   transform: none;
 }
 
